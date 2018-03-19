@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="3" name="common settings" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<ol>
+	<li>Acces the site.</li>
+	<li>Click on the menus</li>
+	<li>Use the languages menu</li>
+	<li>Use the Sign Up menu</li>
+	<li>Use the Sign in menu</li>
+	<li>&quot;SEE ALL PROCESSES&quot; button</li>
+	<li>Acces a processes</li>
+	<li>&quot;SEE ALL ASSEMBLIES&quot; button</li>
+	<li>Acces an assembly</li>
+	<li>&quot;PARTICIPATE&quot; button</li>
+	<li>&quot;MORE INFO&quot; button</li>
+	<li>Return to home page via HOME button</li>
+	<li>Return to home page via LOGO button</li>
+	<li>Register button1</li>
+	<li>Register Button2</li>
+	<li>Bottom menus</li>
+	<li>Social network buttons</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></details> 
+<testsuite id="8" name="Language Menu" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Functionality of the language menu.</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="149" name="DEC-V1-TC-LANGUAGE CAT">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<fullexternalid><![CDATA[DEC-1]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilanguage.</p>
+
+<p>There must be a pop-down menu in the upper part of the site to switch languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english</p>
+
+<p>This TC has to check out that the menu works correctly switching between the different languages and the selected languages stays actives even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;A decidim site has to be no-line.</p>
+
+<p>Use http://staging.decidim.codegram.com/</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>3</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the site decidim</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the catalan option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>assert that the top menu is in catalan</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>inici</li>
+	<li>processos</li>
+	<li>assemblees</li>
+	<li>m&eacute;s informaci&oacute;</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>assert that the following pages are in catalan:</p>
+
+<ol>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">inici</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">processos</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">assemblees</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">m&eacute;s informaci&oacute;</a></li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each Page must hav catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that is in catalan</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in catalan and the text must be catalan</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="166" name="DEC-V1-TC-LANGUAGE ENGL">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<fullexternalid><![CDATA[DEC-3]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilanguage.</p>
+
+<p>There must be a pop-down menu in the upper part of the site to switch languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english</p>
+
+<p>This TC has to check out that the menu works correctly switching between the different languages and the selected languages stays actives even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;A decidim site has to be no-line.</p>
+
+<p>Use http://staging.decidim.codegram.com/</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>3</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the site decidim</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the english option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>assert that the top menu is in english</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>home</li>
+	<li>processes</li>
+	<li>assemblies</li>
+	<li>more information</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>assert that the following pages are in english:</p>
+
+<ol>
+	<li>home</li>
+	<li>processes</li>
+	<li>assemblies</li>
+	<li>more information</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that its in English</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in English and the text must be English</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="174" name="DEC-V1-TC-LANGUAGE CAST">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<fullexternalid><![CDATA[DEC-4]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilanguage.</p>
+
+<p>There must be a pop-down menu in the upper part of the site to switch languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english</p>
+
+<p>This TC has to check out that the menu works correctly switching between the different languages and the selected languages stays actives even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;A decidim site has to be no-line.</p>
+
+<p>Use http://staging.decidim.codegram.com/</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>3</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the site decidim</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the castellano option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>assert that the top menu is in castillano</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>inicio</li>
+	<li>procesos</li>
+	<li>asambleas</li>
+	<li>m&aacute;s informaci&oacute;n</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>assert that the following pages are in castillano:</p>
+
+<ol>
+	<li>inicio</li>
+	<li>procesos</li>
+	<li>asambleas</li>
+	<li>m&aacute;s informaci&oacute;n</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each Page must have castillian text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that is in castillian</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in castellano and the text must be in castellano</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="9" name="SIGN UP PAGE" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Use of the Sign up menu and page</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="208" name="DEC-V1-TC-SIGN-UP-LOG-IN">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<fullexternalid><![CDATA[DEC-9]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the sign in page through the LOG-IN BUTTON</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the sign up page</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand and the red bar should change color slightly</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-UP page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration   and   verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="217" name="DEC-V1-TC-SIGN-UP-SIGN-UP">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<fullexternalid><![CDATA[DEC-11]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the sign up page through the SIGN-UP BUTTON</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the sign in page</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-in page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration   and   verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="10" name="SIGN IN PAGE" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Use of the SIGN IN&nbsp; button and the login page</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="186" name="DEC-V1-TC-SIGN-IN-NEGATIVE-invalid user valid password">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<fullexternalid><![CDATA[DEC-5]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify the behavior of webpage when user enteres an invalid username with valid password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the login page</p>
+
+<p>There should be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user should be already created active user accounts</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter a invalid username</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user should be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter a valid password:</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electr&ograve;nic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electr&oacute;nico o contrase&ntilde;a inv&aacute;lida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="192" name=" DEC-V1-TC-SIGN-IN-POSITIVE">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<fullexternalid><![CDATA[DEC-6]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully logged in to the sign in page with a valid username and a valid password.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the login page</p>
+
+<p>There should be a user name and a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user should be already created active user accounts</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter a valid username</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user should be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter a valid password:</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be redirected to the homepage</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration   and   verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="197" name="DEC-V1-TC-SIGN-IN-NEGATIVE-valid user invalid password">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<fullexternalid><![CDATA[DEC-7]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify the behavior of webpage when user enteres an invalid username with valid password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the login page</p>
+
+<p>There should be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user should be already created active user accounts</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter a valid username</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user should be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter an invalid password:</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electr&ograve;nic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electr&oacute;nico o contrase&ntilde;a inv&aacute;lida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="202" name="DEC-V1-TC-SIGN-IN-NEGATIVE-invalid user invalid password">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<fullexternalid><![CDATA[DEC-8]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify the behavior of webpage when user enteres an invalid username with valid password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the login page</p>
+
+<p>There should be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user should be already created active user accounts</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter an invalid username</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user should be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter an invalid password:</p>
+
+<p>user:</p>
+
+<p>admin:</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electr&ograve;nic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electr&oacute;nico o contrase&ntilde;a inv&aacute;lida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="213" name="DEC-V1-TC-SIGN-IN-LOG-IN-BUTTON">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<fullexternalid><![CDATA[DEC-10]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the sign in page through the LOG-IN BUTTON</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the sign up page</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-in page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration   and   verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="221" name="DEC-V1-TC-SIGN-IN-SIGN-UP">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<fullexternalid><![CDATA[DEC-12]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the sign in page through the LOG-IN BUTTON</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the sign up page</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-in page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration   and   verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="11" name="Top Menu" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>Check that the top menu allows you to go from one page to the others and back to the home</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testsuite><testsuite id="12" name="Home_Menu_Buttons" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[<p>Check out the all the other buttons in the home page are working</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testsuite></testsuite><testsuite id="5" name="Processes Menu" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Functionality of the Processes page</p>
+]]></details> 
+</testsuite><testsuite id="6" name="Assemblies Menu" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Functionalities of the Assemblies window</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testsuite><testsuite id="7" name="More Information" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>Functionalities of the More Information page</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testsuite></testsuite>
