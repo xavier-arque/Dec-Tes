@@ -1,2 +1,3 @@
 # Dec-Tes
-A repo for some decidim automated tests
+A repo for Decidim automated tests, the Workframe and some information
+
