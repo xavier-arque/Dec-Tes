@@ -1,0 +1,77 @@
+
+GHANGE THE VALUES OF THIS FILE ACCORDING TO YOUR DECIDIM SITE
+
+*****DRIVERS******
+
+ChromeDriver=/Users/xavier/Desktop/QA_Projects/Decidim_QA/Dec-Tes/Decidim_Automated_Testing/src/main/resources/chromedriver
+
+ChromeDriver_linux=
+
+ChromeDriver_win=
+
+FirefoxDriver= /Users/xavier/Desktop/QA_Projects/Decidim_QA/Dec-Tes/Decidim_Automated_Testing/src/main/resources/geckodriver-macos
+
+FirefoxDriver_linux=
+
+FirefoxDriver-win=
+
+IEDriver=
+
+****USERS FOR TESTING*****
+
+admin=admin@example.org
+user=user@example.org
+password=decidim123456
+
+******PATHS*****
+
+URL_HOME=http://staging.decidim.codegram.com/
+
+URL_LOGIN= http://staging.decidim.codegram.com/users/sign_in
+
+URL_SIGNUP=http://staging.decidim.codegram.com/users/sign_up
+
+URL_PROCESSESS=http://staging.decidim.codegram.com/processes
+
+URL_ASSEMBLIES=http://staging.decidim.codegram.com/assemblies
+
+URL_MORE_INFORMATION=http://staging.decidim.codegram.com/pages
+
+****DATA DRIVING TESTS********
+
+ExcelPath=
+
+*****WEBELEMENTS*****
+
+WEBELEMENTS HOME
+
+WEBELEMENTS SIGNIN/LOGIN
+
+emailUser=user_email
+
+passwordUser=user_password
+
+loginButton=commit
+
+checkButton=user_remember_me
+
+signInFlashMessage=flash callout success
+
+signUpButton=Sign up
+
+createAnAccountButton=Create an account
+
+forgotYourPasswordButton=Forgot your password
+
+confirmationInstructionsButton=receive confirmation instructions
+
+cookieWarning=button tiny cookie-bar__button
+
+agreeCookieButton=
+
+WEBELEMENTS SIGUP/REGISTER
+
+WEBELEMENTS 
+
+
+
