@@ -138,9 +138,9 @@ public class LoginPage
     {
         String actualTitle = driver.getTitle(); // get the actual value of the title and print it
             System.out.println("the page-title is : " + actualTitle );
-        System.out.println("The Flash message says: " + driver.findElement(cookieWarning).getText());
+       // System.out.println("The Flash message says: " + driver.findElement(cookieWarning).getText());
 
-        clickagreeCookieButton();
+       // clickagreeCookieButton();
 
         clickButtonSignUp();
             System.out.println("the page-title is : " + driver.getTitle());// get the actual value of the title and print it to check out that you are out

@@ -59,6 +59,14 @@ public class ConfigReader
     {
         return pro.getProperty("user");
     }
+    public String getUser1()
+    {
+        return pro.getProperty("user1");
+    }
+    public String getUser2()
+    {
+        return pro.getProperty("user2");
+    }
     public String getAdmin()
     {
         return pro.getProperty("admin");
@@ -66,6 +74,14 @@ public class ConfigReader
     public String getPassword()
     {
         return pro.getProperty("password");
+    }
+    public String getPassword1()
+    {
+        return pro.getProperty("password1");
+    }
+    public String getPassword2()
+    {
+        return pro.getProperty("password2");
     }
 
     // URLS
@@ -95,7 +111,7 @@ public class ConfigReader
         return pro.getProperty("URL_MORE_INFORMATION");
     }
 
-    //WEBELEMENTS
+    //WEBELEMENTS LOGIN PAGE
 
     public String getWebElement_emailUser()
     {
@@ -142,6 +158,10 @@ public class ConfigReader
     {
         return pro.getProperty("signInFlashMessage");
     }
+
+    //WEBELEMENTS LOGIN PAGE
+
+
 
     // it will be much better to use switch instead of if but it may give errors with Strings
 

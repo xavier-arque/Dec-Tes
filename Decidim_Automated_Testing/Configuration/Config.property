@@ -21,7 +21,13 @@ IEDriver=
 
 admin=admin@example.org
 user=user@example.org
+user1=
+user2=
+user4=
 password=decidim123456
+password1
+password2
+password3
 
 ******PATHS*****
 
@@ -44,6 +50,36 @@ ExcelPath=
 *****WEBELEMENTS*****
 
 WEBELEMENTS HOME
+
+registerButtonTop=
+
+cardImageProces1=
+
+cardLinkProces1=
+
+cardImageProces2=
+
+cardLinkProces2=
+
+seeAllProcessesButton=button expanded hollow button--sc home-section__cta
+
+cardImageAssemblies1=
+
+cardLinkAssemblies1=
+
+cardImageAssemblies2=
+
+cardLinkAssemblies2=
+
+seeAllAssembliesButton=
+
+moreInfoButton=
+
+registerButtonTop=
+
+WEBELEMENTS TOP MENU
+
+WEBELEMENTS FOOTER
 
 WEBELEMENTS SIGNIN/LOGIN
 
@@ -71,7 +107,10 @@ agreeCookieButton=
 
 WEBELEMENTS SIGUP/REGISTER
 
-WEBELEMENTS 
+WEBELEMENTS PROCESSES
 
+WEBELEMENTS ASSEMBLIES
+
+WEBELEMENTS MORE INFORMATION
 
 
