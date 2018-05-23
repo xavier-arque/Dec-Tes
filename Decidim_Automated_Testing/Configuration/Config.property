@@ -3,6 +3,8 @@ GHANGE THE VALUES OF THIS FILE ACCORDING TO YOUR DECIDIM SITE
 
 *****DRIVERS******
 
+driver=ChromeDriver
+
 ChromeDriver=/Users/xavier/Desktop/QA_Projects/Decidim_QA/Dec-Tes/Decidim_Automated_Testing/src/main/resources/chromedriver
 
 ChromeDriver_linux=
@@ -18,6 +20,8 @@ FirefoxDriver-win=
 IEDriver=
 
 ****USERS FOR TESTING*****
+
+DecidimLoginsExcelSheet=Full1
 
 admin=admin@example.org
 user=user@example.org
@@ -45,7 +49,7 @@ URL_MORE_INFORMATION=http://staging.decidim.codegram.com/pages
 
 ****DATA DRIVING TESTS********
 
-ExcelPath=
+ExcelPath=./Configuration/DecidimLoginData.xlsx
 
 *****WEBELEMENTS*****
 

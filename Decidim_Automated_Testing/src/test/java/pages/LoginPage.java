@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -41,7 +42,7 @@ public class LoginPage
 
     By cookieWarning = By.xpath("//*[@class='cookie-warning']");
     By agreeCookieButton = By.xpath("//*[@class='cookie-warning__action']");
-    By signInFlashMessage = By.xpath("//*[@class='flash callout success']");
+    By signInFlashMessage = By.xpath("//*[contains(@class,'flash callout')]");
 
     /**
      * create methods for this page
@@ -165,4 +166,26 @@ public class LoginPage
             System.out.println("The Flash message says: " + driver.findElement(signInFlashMessage).getText());//I don't know why it adds an \n * at the end
             System.out.println("after login the actual page-title is: " + driver.getTitle());// get the actual value of the title and print it to check out that you are out
     }
+
+    public void loginPageDecidimShort(String user, String password) // to be used for data driven logins
+    {
+
+
+      //  String actualTitle = driver.getTitle();
+        System.out.println("the page-title is : " + driver.getTitle());// get the actual value of the title and print it
+        driver.findElement(emailUser).sendKeys(user);
+        driver.findElement(passwordUser).sendKeys(password);
+
+        clickButtonLogin();
+
+
+            System.out.println("after login the actual page-title is: " + driver.getTitle());// get the actual value of the title and print it to check out that you are out
+
+       // Assert.assertTrue(driver.findElement(signInFlashMessage).getText().contains("successfully"),"User is not able to login" ); // to be used just in case you need and assert
+
+            System.out.println("The Flash message says: " + driver.findElement(signInFlashMessage).getText());//I don't know why it adds an \n * at the end
+    }
+
+
+
 }

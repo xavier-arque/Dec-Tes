@@ -16,7 +16,7 @@ public class ConfigReader
 {
     Properties pro;
 
-    public ConfigReader()
+    public ConfigReader() // loads the config file
     {
         try
         {
@@ -32,8 +32,9 @@ public class ConfigReader
 
     }
 
-    // DRIVER PATHS
+    // PATHS
 
+    public String getDriver(){ return pro.getProperty("driver");}
     public String getChromePath()
     {
         return pro.getProperty("ChromeDriver");
@@ -51,6 +52,10 @@ public class ConfigReader
 
     {
         return pro.getProperty("FirefoxDriver_linux");
+    }
+    public String getExcelPath()
+    {
+        return pro.getProperty("ExcelPath");
     }
 
     // USERS
@@ -82,6 +87,10 @@ public class ConfigReader
     public String getPassword2()
     {
         return pro.getProperty("password2");
+    }
+    public String getDecidimLoginsExcelSheet()
+    {
+        return pro.getProperty("DecidimLoginsExcelSheet");
     }
 
     // URLS
