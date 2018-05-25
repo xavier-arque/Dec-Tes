@@ -8,7 +8,28 @@ package tests;
  * It uses the config.property file to obtain the values needed and
  * an excel file to load all the users.
  *
- *It uses a short login method instead of the normal one.
+ * It uses a short login method instead of the normal one.
+ *
+ * REQUIEREMENTS:
+ * PARTIC-1-REG : Registration, verification and Navigate
+ *
+ * GENER-1-SII : Sign in
+ *
+ * TEST CASE:
+ * DEC-6: DEC-V1-TC-SIGN-IN-POSITIVE
+ *
+ * This Class will test the login page for amny different users
+ * It uses the config.property file to obtain the values needed
+ * It uses the DecidicimLoginData.xlsx to load the user's data
+ *
+ * Feature: Test login/Sing In with correct credentials
+ *
+ * Scenario: Test the login features (e-mail, password and login button)
+ * Given Open Driver
+ * And Navigate to Login Page
+ * When I select the data provider
+ * Then user should be able to login succesfully
+ *
  */
 
 
@@ -69,8 +90,6 @@ public class DataDrivenLoginTest extends BaseClass
 
         return data;
     }
-
-
     @DataProvider(name="decidimDataSmall")
     public Object[][] passDataSmall()
     {
@@ -82,7 +101,6 @@ public class DataDrivenLoginTest extends BaseClass
         data[1][1]= "decidim";
         data[2][0]= "admin@example.org";
         data[2][1]= "decidim123456";
-
 
         return data;
     }
