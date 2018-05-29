@@ -2,9 +2,9 @@ package pages;
 
 /***
  * @author Xavier Arque
+ * DATE: 15-V-2018
  *
- *
- * This Class will store all the locators and methods of login page
+ * This Class will store all the locators, methods and actioins in the login page
  *
  */
 
@@ -26,7 +26,7 @@ public class LoginPage
     ConfigReader configura = new ConfigReader(); // instance the object with all the config data
 
     /**
-     * Identify page locators
+     * Page locators
      */
 
     By passwordUser = By.id(configura.getWebElement_Login("passwordUser"));
@@ -42,10 +42,10 @@ public class LoginPage
 
     By cookieWarning = By.xpath("//*[@class='cookie-warning']");
     By agreeCookieButton = By.xpath("//*[@class='cookie-warning__action']");
-    By signInFlashMessage = By.xpath("//*[contains(@class,'flash callout')]");
+    By signInFlashMessage = By.xpath("//div[contains(@class,'flash callout')]");
 
     /**
-     * create methods for this page
+     * Methods for this page
      */
 
     public LoginPage(WebDriver driver)
@@ -120,7 +120,7 @@ public class LoginPage
         }
     }
 
-    public void clickagreeCookieButton()
+    public void clickagreeCookieButton()  // uncomment if need it, but be sure you have no cookies
     {
         try {
             driver.findElement(agreeCookieButton).click();
@@ -129,18 +129,19 @@ public class LoginPage
             System.out.println("Error message while going to confirmation instructions page after click: " + e.getMessage());
         }
     }
+
     /**
-     *
-     * Create an action that uses locators and methods
+     * Actions that uses locators and methods
      *
      */
 
-    public void loginPageDecidim(String user, String password)
+    public void loginPageDecidim(String user, String password) // to be used to check out the whole page
     {
         String actualTitle = driver.getTitle(); // get the actual value of the title and print it
             System.out.println("the page-title is : " + actualTitle );
-       // System.out.println("The Flash message says: " + driver.findElement(cookieWarning).getText());
 
+       // Have to create an if + assert for this
+       // System.out.println("The Flash message says: " + driver.findElement(cookieWarning).getText());
        // clickagreeCookieButton();
 
         clickButtonSignUp();
@@ -167,25 +168,31 @@ public class LoginPage
             System.out.println("after login the actual page-title is: " + driver.getTitle());// get the actual value of the title and print it to check out that you are out
     }
 
-    public void loginPageDecidimShort(String user, String password) // to be used for data driven logins
+    public void loginPageDecidim_Fast(String user, String password) // to be used for simple login
     {
+        String actualTitle = driver.getTitle(); // get the actual value of the title and print it
+        System.out.println("the page-title is : " + actualTitle );
+        enterEmail(user);
+        enterPassword(password);
+        clickButtonLogin();
+        System.out.println("The Flash message says: " + driver.findElement(signInFlashMessage).getText());//I don't know why it adds an \n * at the end
+        System.out.println("after login the actual page-title is: " + driver.getTitle());// get the actual value of the title and print it to check out that you are out
+    }
 
 
-      //  String actualTitle = driver.getTitle();
+    public void loginPageDecidim_Short(String user, String password) // to be used for data driven logins
+    {
         System.out.println("the page-title is : " + driver.getTitle());// get the actual value of the title and print it
         driver.findElement(emailUser).sendKeys(user);
         driver.findElement(passwordUser).sendKeys(password);
-
         clickButtonLogin();
-
 
             System.out.println("after login the actual page-title is: " + driver.getTitle());// get the actual value of the title and print it to check out that you are out
 
        // Assert.assertTrue(driver.findElement(signInFlashMessage).getText().contains("successfully"),"User is not able to login" ); // to be used just in case you need and assert
-
+            System.out.println("user as: "+ user + " and password: " + password);
             System.out.println("The Flash message says: " + driver.findElement(signInFlashMessage).getText());//I don't know why it adds an \n * at the end
+
     }
-
-
 
 }

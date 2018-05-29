@@ -3,7 +3,6 @@ package pages;
 /***
  * @author Xavier Arque
  *
- *
  * This Class will store all the locators and methods for the Home page
  *
  */

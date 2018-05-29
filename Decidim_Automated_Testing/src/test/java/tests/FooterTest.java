@@ -6,10 +6,7 @@ package tests;
  * REQUIEREMENTS:
  * PARTIC-1-REG : Registration, verification and Navigate
  *
- * TEST CASE:
- * DEC-V1-TC-FOOTER-MENU
- *
- * This Class will test all the functionalities of the login page
+ * This Class will test all LINKS of the footer area
  * It uses the config.property file to obtain the values needed
  *
  * Feature: Test how the footer works
@@ -20,8 +17,12 @@ package tests;
  * Scenario: Test all links and icons
  * Given Open Driver
  * And Navigate to Decidim Home Page
- * When I click on the links and icons
+ * When I click on the links and icons in the footer area
  * Then new window should open and user will be redirected to this new page
+ *
+ *
+ * TEST CASE:
+ * DEC-32:DEC-V1-TC-FOOTER-MENU
  *
  */
 

@@ -2,12 +2,12 @@ package tests;
 
 /***
  * @author Xavier Arque
+ * DATE:
  *
  * REQUIEREMENTS:
+ *PARTIC-1-REG : Registration, verification and Navigate
  *
- *
- * TEST CASE:
- *
+
  *
  * This Class will test the functionalities of the More Information page
  * It uses the config.property file to obtain the values needed
@@ -23,6 +23,9 @@ package tests;
  * And
  * And
  * Then
+ *
+ * TEST CASE:
+ * DEC-21:DEC-V1-TC-MORE-INFORMATION-PAGE
  *
  */
 

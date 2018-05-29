@@ -2,9 +2,12 @@ package tests;
 
 /***
  * @author Xavier Arque
- * DATE:
+ *DATE
  *
  * REQUIEREMENTS:
+ *
+ *
+ *
  *
  *
  * This Class will test the functionalities of the Processess page
@@ -23,7 +26,7 @@ package tests;
  * Then
  *
  * TEST CASE:
- * DEC-34:DEC-V1-TC-PROCESSES-PAGE
+ * DEC-33:DEC-V1-TC-ASSEMBLIES-PAGE
  *
  */
 
@@ -31,7 +34,7 @@ package tests;
 import org.testng.annotations.Test;
 import utilities.BaseClass;
 
-public class ProcessessTest extends BaseClass
+public class AssembliesTest extends BaseClass
 {
 
     @Test(description = "This TC will check out all the buttons in the Processess Page")

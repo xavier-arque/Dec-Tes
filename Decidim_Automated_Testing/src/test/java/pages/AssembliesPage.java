@@ -4,7 +4,8 @@ package pages;
  * @author Xavier Arque
  *
  *
- * This Class will store all the locators and methods for the More Information page
+ * This Class will store all the locators and methods for the Assemblies page
+ *
  *
  */
 

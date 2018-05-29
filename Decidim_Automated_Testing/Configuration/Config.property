@@ -22,6 +22,7 @@ IEDriver=
 ****USERS FOR TESTING*****
 
 DecidimLoginsExcelSheet=Full1
+DecidimLoginsExcelSheet2=Full2
 
 admin=admin@example.org
 user=user@example.org

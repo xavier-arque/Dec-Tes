@@ -1,12 +1,12 @@
-package tests;
+package tests.login;
 
 /***
  * @author Xavier Arque
  *
  * A class to launch a data driven login test
  * This Class will test the main functionalities of the login page
- * It uses the config.property file to obtain the values needed and
- * an excel file to load all the users.
+ * It uses the config.property file to obtain the values needed
+ * and an excel file to load all the users.
  *
  * It uses a short login method instead of the normal one.
  *
@@ -15,10 +15,8 @@ package tests;
  *
  * GENER-1-SII : Sign in
  *
- * TEST CASE:
- * DEC-6: DEC-V1-TC-SIGN-IN-POSITIVE
  *
- * This Class will test the login page for amny different users
+ * This Class will test the login page for many different users
  * It uses the config.property file to obtain the values needed
  * It uses the DecidicimLoginData.xlsx to load the user's data
  *
@@ -26,9 +24,12 @@ package tests;
  *
  * Scenario: Test the login features (e-mail, password and login button)
  * Given Open Driver
- * And Navigate to Login Page
+ * And Navigate to LoginPage
  * When I select the data provider
  * Then user should be able to login succesfully
+ *
+ * TEST CASE:
+ * DEC-6: DEC-V1-TC-SIGN-IN-POSITIVE
  *
  */
 
@@ -56,7 +57,7 @@ public class DataDrivenLoginTest extends BaseClass
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         login = new LoginPage(driver);
 
-        login.loginPageDecidimShort(username, password);
+        login.loginPageDecidim_Short(username, password);
 
         driver.close(); // we close it to load a fresh new one for a different user
 
@@ -90,6 +91,9 @@ public class DataDrivenLoginTest extends BaseClass
 
         return data;
     }
+
+    // function to load users and paswords without an excel file
+
     @DataProvider(name="decidimDataSmall")
     public Object[][] passDataSmall()
     {

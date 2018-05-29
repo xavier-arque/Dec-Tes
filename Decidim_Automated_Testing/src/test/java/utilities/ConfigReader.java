@@ -92,6 +92,10 @@ public class ConfigReader
     {
         return pro.getProperty("DecidimLoginsExcelSheet");
     }
+    public String getDecidimLoginsExcelSheet2()
+    {
+        return pro.getProperty("DecidimLoginsExcelSheet2");
+    }
 
     // URLS
 
