@@ -2,6 +2,7 @@ package utilities;
 
 /***
  * @author Xavier Arque
+ * DATE:
  *
  *
  * This is the Base class for all the Tests. So far is adjusted only for chrome and firefox drivers
@@ -24,11 +25,11 @@ public class BaseClass
     public WebDriver driver;
     public ConfigReader configura;
 
-
     @BeforeClass
     public void setUp()
     {
         configura = new ConfigReader();
+
         System.setProperty("webdriver.chrome.driver", configura.getChromePath());
         driver = new ChromeDriver();
 

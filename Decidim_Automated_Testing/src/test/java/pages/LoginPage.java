@@ -23,7 +23,7 @@ import java.io.File;
 public class LoginPage
 {
     WebDriver driver;
-    ConfigReader configura = new ConfigReader(); // instance the object with all the config data
+    ConfigReader configura; // instance the object with all the config data
 
     /**
      * Page locators

@@ -1,10 +1,11 @@
 package pages;
 
 /***
- * @author Xavier Arque
+ * @author
+ * DATE:
  *
  *
- * This Class will store all the locators and methods for the Assemblies page
+ * This Class will store all the locators, methods and actions for the Assemblies page
  *
  *
  */
@@ -15,24 +16,36 @@ import utilities.ConfigReader;
 public class AssembliesPage
 {
     WebDriver driver;
-    ConfigReader configura = new ConfigReader(); // instance the object with all the config data
-
-    /**
-     * Identify page locators
-     */
-
-
-    // I do not use the config file for the xpaths
-
-
-    /**
-     * create methods for this page
-     */
+    ConfigReader configura; // instance the object with all the config data
 
     public AssembliesPage(WebDriver driver)
     {
         this.driver=driver;
     }
 
+
+    /**
+     * Identify page locators
+     */
+
+
+    // Xpaths
+
+
+    /**
+     * Created methods for this page
+     */
+
+
+
+    /**
+     * Actions that uses locators and methods
+     *
+     */
+
+
+    /**
+     *  Data or config files used
+     */
 
 }
