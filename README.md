@@ -1,4 +1,4 @@
-﻿# Dec-Tes
+# Dec-Tes
 ## A repository for Decidim QA. (work in progress)
 
 **Decidim** (https://decidim.org/) is a common's free and open project and infrastructure involving code, documentation, design, training courses, a legal framework, collaborative interfaces, user and facilitation communities, and a common vision. You may find everything related with decidim here:
@@ -24,11 +24,11 @@ So most of the time you just need an Ariadne yarn that goes over the parts that 
 - Check out. Execute the Test Cases (manual or automated)
 - Validate. Does it work fine? 
 
-  The requirements file is the document that explains what every part of your site is supposed to do and each requirement is linked to the Test Cases to be executed for this requirements. Thus you have the information and the tools to check out that this part does what its supposed to do. Even if you knew nothing about this part of your decidim site.
+The requirements file is the document that explains what every part of your site is supposed to do and each requirement is linked to the Test Cases to be executed for this requirements. Thus you have the information and the tools to check out that this part does what its supposed to do. Even if you knew nothing about this part of your decidim site.
 
 Regressions. Sometimes you may want to go all the other way around. You want to validate that after some changes everything works fine. Run the Test Cases and if something goes wrong, get informed about what it doesn't work. 
 
-In those scenarios you need to run the code for all the Test Cases that you have in the Decidim_Automated_Testing folder, identify if a Test Case goes red to which requirement it belongs -this information is in the Test-Cases folder-, and get informed about the requirement, looking at the requirements document.
+In those scenarios you need to run the code for all the Test Cases that you have in the [Decidim_Automated_Testing](https://github.com/xavier-arque/Dec-Tes/tree/master/Decidim_Automated_Testing/src/test/java) folder, identify if a Test Case goes red to which requirement it belongs -this information is in the Test-Cases folder-, and get informed about the requirement, looking at the requirements document.
 
 To do all this you have html documents and XML files ready to be imported to TestLink (http://testlink.org/) to organize all the testing process. 
 
@@ -60,9 +60,9 @@ The folder Decidim_Automated_Testing contains the java code created in order to 
 ## Contributing
 This is an open project and every contribution is welcome. You can contribute in three different ways:
 
-- Document a requirement. Here you'll find more information
-- Edit or create Test Cases. Here you'll find more information
-- Edit or create java code for the automated Test Cases. Here you'll find more information
+- Document a requirement. [Here you'll find more information](https://github.com/xavier-arque/Dec-Tes/tree/master/Requierements)
+- Edit or create Test Cases. [Here you'll find more information](https://github.com/xavier-arque/Dec-Tes/tree/master/Test-Cases)
+- Edit or create java code for the automated Test Cases. [Here you'll find more information](https://github.com/xavier-arque/Dec-Tes/tree/master/Decidim_Automated_Testing)
 
 ## Versioning. 
 Current version: 1
