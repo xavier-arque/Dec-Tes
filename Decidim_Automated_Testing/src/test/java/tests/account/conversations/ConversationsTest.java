@@ -29,20 +29,20 @@ package tests.account.conversations;
 
 
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.LoginPage_deprecated;
 import utilities.BaseClass;
 
 public class ConversationsTest extends BaseClass
 {
 
-    LoginPage login;
+    LoginPage_deprecated login;
 
     @Test(description = "This TC will ")
     public void conversations()
     {
             System.out.println("===== Initialize Tests========");
         driver.get(configura.getApplicationUrl_Login());
-        login = new LoginPage(driver);
+        login = new LoginPage_deprecated(driver);
             System.out.println("===== Closed Tests========");
     }
 

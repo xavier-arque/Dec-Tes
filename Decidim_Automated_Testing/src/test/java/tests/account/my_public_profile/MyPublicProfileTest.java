@@ -29,20 +29,20 @@ package tests.account.my_public_profile;
 
 
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.LoginPage_deprecated;
 import utilities.BaseClass;
 
 public class MyPublicProfileTest extends BaseClass
 {
 
-    LoginPage login;
+    LoginPage_deprecated login;
 
     @Test(description = "This TC will ")
     public void myPublicProfile()
     {
             System.out.println("===== Initialize Tests========");
         driver.get(configura.getApplicationUrl_Login());
-        login = new LoginPage(driver);
+        login = new LoginPage_deprecated(driver);
             System.out.println("===== Closed Tests========");
     }
 

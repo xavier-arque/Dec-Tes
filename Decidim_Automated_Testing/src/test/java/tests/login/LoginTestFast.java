@@ -16,7 +16,7 @@ package tests.login;
  *
  * Scenario: Test basic login
  * Given Open Driver
- * And Navigate to LoginPage
+ * And Navigate to LoginPage_deprecated
  * When I enter valid "username"
  * And valid "password"
  * And click on the login BUTTON
@@ -29,20 +29,20 @@ package tests.login;
 
 
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.LoginPage_v1;
 import utilities.BaseClass;
 
 public class LoginTestFast extends BaseClass
 {
 
-    LoginPage login;
+    LoginPage_v1 login;
 
     @Test(description = "This TC will perform a valid login")
     public void loginPageTest_Fast()
     {
             System.out.println("===== Initialize Tests========");
         driver.get(configura.getApplicationUrl_Login());
-        login = new LoginPage(driver);
+        login = new LoginPage_v1(driver);
         try {
             login.loginPageDecidim_Fast(configura.getUser(), configura.getPassword());
         } catch (Exception e) {

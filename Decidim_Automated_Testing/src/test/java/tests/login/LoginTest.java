@@ -16,7 +16,7 @@ package tests.login;
  *
  * Scenario: Test all links, check marks and icons
  * Given Open Driver
- * And Navigate to LoginPage
+ * And Navigate to LoginPage_deprecated
  * When I enter valid "username"
  * And valid "password"
  * And the Remember me check marck BUTTON works correctly
@@ -35,20 +35,20 @@ package tests.login;
 
 
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.LoginPage_v1;
 import utilities.BaseClass;
 
 public class LoginTest extends BaseClass
 {
 
-    LoginPage login;
+    LoginPage_v1 login;
 
     @Test(description = "This TC will check out all the buttons and perform a valid login")
     public void loginPageTest()
     {
             System.out.println("===== Initialize Tests========");
         driver.get(configura.getApplicationUrl_Login());
-        login = new LoginPage(driver);
+        login = new LoginPage_v1(driver);
         login.loginPageDecidim(configura.getUser(), configura.getPassword());
             System.out.println("===== Closed Tests========");
     }

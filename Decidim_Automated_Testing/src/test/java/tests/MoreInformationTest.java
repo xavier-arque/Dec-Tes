@@ -31,7 +31,6 @@ package tests;
 
 
 import org.testng.annotations.Test;
-import pages.LoginPage;
 import utilities.BaseClass;
 
 public class MoreInformationTest extends BaseClass

@@ -22,7 +22,7 @@ package tests.login;
  *
  * Scenario: Test the login features (e-mail, password and login button)
  * Given Open Driver
- * And Navigate to LoginPage
+ * And Navigate to LoginPage_deprecated
  * When I select the data provider
  * Then user should be able to login succesfully
  *
@@ -37,7 +37,7 @@ package tests.login;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.LoginPage_v1;
 import utilities.BaseClass;
 import utilities.ExcelReader;
 
@@ -45,7 +45,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DataDrivenLoginNegativeTest extends BaseClass
 {
-    LoginPage login;
+    LoginPage_v1 login;
 
     @Test(dataProvider="decidimData")
     public void DataDrivenloginPageTest(String username, String password)
@@ -54,7 +54,7 @@ public class DataDrivenLoginNegativeTest extends BaseClass
 
         driver.get(configura.getApplicationUrl_Login());
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        login = new LoginPage(driver);
+        login = new LoginPage_v1(driver);
 
         login.loginPageDecidim_Short(username, password);
 

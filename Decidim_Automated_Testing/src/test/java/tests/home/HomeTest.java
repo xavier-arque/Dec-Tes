@@ -12,7 +12,6 @@ package tests.home;
 
 import org.testng.annotations.Test;
 import pages.HomePage;
-import pages.LoginPage;
 import utilities.BaseClass;
 
 public class HomeTest extends BaseClass
