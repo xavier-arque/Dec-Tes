@@ -19,7 +19,7 @@ public class BaseClass
 
 
     @BeforeClass
-    public void setUp() throws Exception
+    public void setUp()
     {
         configura = new ConfigReader();
 
@@ -33,7 +33,7 @@ public class BaseClass
     }
 
     @AfterClass
-    public void tearDown() throws Exception
+    public void tearDown()
     {
         driver.quit();
             System.out.println("that's all folks!");
