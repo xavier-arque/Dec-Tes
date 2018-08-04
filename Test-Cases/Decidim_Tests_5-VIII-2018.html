@@ -1,0 +1,1676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testspec Decidim Tests</title>
+<link type="text/css" rel="stylesheet" href="Decidim_Tests_5-VIII-2018_fitxers/tl_documents.css">
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr>
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg-&gt;document_generator-&gt;company_logo" src="Decidim_Tests_5-VIII-2018_fitxers/tl-logo-transparent-25.png" height="53"></p></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Decidim Tests</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 08/04/2018</p></div>
+<div class="pagefooter" id="copyright">2012 © TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.common settings</a></b></p>
+<p style="padding-left: 30px;"><b><a href="#toc_1_1">1.1.Top Menu</a></b></p>
+<p style="padding-left: 40px;"><b><a href="#toc_1_1_1">1.1.1.Language Menu</a></b></p>
+<p style="padding-left: 75px;"><a href="#toc_tc205">DEC-1: TC-CS-TM-LANGUAGE_MENU-CAT</a></p><p style="padding-left: 75px;"><a href="#toc_tc213">DEC-3: TC-CS-TM-LANGUAGE_MENU-ENGL</a></p><p style="padding-left: 75px;"><a href="#toc_tc221">DEC-4: TC-CS-TM-LANGUAGE_MENU-SPAN</a></p><p style="padding-left: 40px;"><b><a href="#toc_1_1_2">1.1.2.Sign Up Page</a></b></p>
+<p style="padding-left: 75px;"><a href="#toc_tc230">DEC-9: TC-CS-TM-SIGN_UP-REGISTER</a></p><p style="padding-left: 75px;"><a href="#toc_tc239">DEC-11: TC-CS-TM-SIGN_UP-LOG_IN</a></p><p style="padding-left: 75px;"><a href="#toc_tc243">DEC-14: TC-CS-TM-SIGN_UP-OTHER</a></p><p style="padding-left: 75px;"><a href="#toc_tc245">DEC-15: TC-CS-TM-SIGN_UP-REGISTER_NEGATIVE</a></p><p style="padding-left: 40px;"><b><a href="#toc_1_1_3">1.1.3.Sign In Page</a></b></p>
+<p style="padding-left: 75px;"><a href="#toc_tc253">DEC-5: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-invalid user valid password</a></p><p style="padding-left: 75px;"><a href="#toc_tc258">DEC-6: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_POSITIVE</a></p><p style="padding-left: 75px;"><a href="#toc_tc263">DEC-7: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-invalid user invalid password</a></p><p style="padding-left: 75px;"><a href="#toc_tc268">DEC-8: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-valid user invalid password</a></p><p style="padding-left: 75px;"><a href="#toc_tc273">DEC-10: TC-CS-TM-SIN_IN_PAGE-LOG_IN_BUTTON</a></p><p style="padding-left: 75px;"><a href="#toc_tc277">DEC-12: TC-CS-TM-SIN_IN_PAGE-SIGN_UP</a></p><p style="padding-left: 75px;"><a href="#toc_tc281">DEC-13: TC-CS-TM-SIN_IN_PAGE-OTHER</a></p><p style="padding-left: 60px;"><a href="#toc_tc283">DEC-16: TC-CS-TM-NAVIGATION_BAR</a></p><p style="padding-left: 60px;"><a href="#toc_tc292">DEC-35: TC-CS-TM-TITLE_BAR</a></p><p style="padding-left: 60px;"><a href="#toc_tc295">DEC-36: TC-CS-TM-OMNIPRESENT_AND_COOKIES</a></p><p style="padding-left: 30px;"><b><a href="#toc_1_2">1.2.Profile Menu</a></b></p>
+<p style="padding-left: 60px;"><a href="#toc_tc300">DEC-23: TC-CS-PM-PROFILE_MENU</a></p><p style="padding-left: 40px;"><b><a href="#toc_1_2_1">1.2.1.Account</a></b></p>
+<p style="padding-left: 75px;"><a href="#toc_tc309">DEC-24: TC-CS-PM-MY_ACCOUNT-ACCOUNT</a></p><p style="padding-left: 75px;"><a href="#toc_tc323">DEC-25: TC-CS-PM-MY_ACCOUNT-NOTIFICATION_SETTINGS</a></p><p style="padding-left: 75px;"><a href="#toc_tc328">DEC-26: TC-CS-PM-MY_ACCOUNT-DELETE_MY_ACCOUNT</a></p><p style="padding-left: 75px;"><a href="#toc_tc334">DEC-27: TC-CS-PM-MY_ACCOUNT-ORGANIZATIONS</a></p><p style="padding-left: 40px;"><b><a href="#toc_1_2_2">1.2.2.Authorizations</a></b></p>
+<p style="padding-left: 75px;"><a href="#toc_tc338">DEC-28: TC-CS-PM-AUTHORIZATIONS-IDENTITY_DOC</a></p><p style="padding-left: 75px;"><a href="#toc_tc347">DEC-29: TC-CS-PM-AUTHORIZATIONS-CODE_POSTAL_LETTER</a></p><p style="padding-left: 75px;"><a href="#toc_tc353">DEC-30: TC-CS-PM-AUTHORIZATIONS-EXAMPLE_AUTHORIZATION</a></p><p style="padding-left: 30px;"><b><a href="#toc_1_3">1.3.Footer Menu</a></b></p>
+<p style="padding-left: 60px;"><a href="#toc_tc360">DEC-32: TC-FM-FOOTER_MENU</a></p><br><p style="padding-left: 20px;"><b><a href="#toc_2">2.Processes Page</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc371">DEC-34: TC-PP-PROCESSES_PAGE</a></p><br><p style="padding-left: 20px;"><b><a href="#toc_3">3.Assemblies Page</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc387">DEC-33: TC-AP-ASSEMBLIES_PAGE</a></p><br><p style="padding-left: 20px;"><b><a href="#toc_4">4.More Information Page</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc402">DEC-21: TC-MIP-MORE_INFORMATION_PAGE</a></p><br><p style="padding-left: 20px;"><b><a href="#toc_5">5.Home Page</a></b></p>
+<p style="padding-left: 30px;"><b><a href="#toc_5_1">5.1.Home_Menu_Buttons</a></b></p>
+<p style="padding-left: 60px;"><a href="#toc_tc415">DEC-17: TC-HP-HMB-HOME_HERO</a></p><p style="padding-left: 40px;"><b><a href="#toc_5_1_1">5.1.1.Cards</a></b></p>
+<p style="padding-left: 75px;"><a href="#toc_tc420">DEC-18: TC-HP-HMB-CARDS-HOME_PROCESSES</a></p><p style="padding-left: 75px;"><a href="#toc_tc427">DEC-19: TC-HP-HMB-CARDS-HOME_ASSEMBLIES</a></p><p style="padding-left: 75px;"><a href="#toc_tc434">DEC-20: TC-HP-HMB-CARDS-HOME_INITIATIVES</a></p><p style="padding-left: 75px;"><a href="#toc_tc441">DEC-31: TC-HP-HMB-CARDS-HOME_OTHER_CARDS</a></p><p style="padding-left: 60px;"><a href="#toc_tc448">DEC-22: TC-HP-HMB-LOWER_PART</a></p></div><a name="toc_1"></a>
+<h1 class="doclevel">1.Test Suite : common settings</h1>
+<div><ol>
+	<li>Acces the site.</li>
+	<li>Click on the menus</li>
+	<li>Use the languages menu</li>
+	<li>Use the Sign Up menu</li>
+	<li>Use the Sign in menu</li>
+	<li>"SEE ALL PROCESSES" button</li>
+	<li>Acces a processes</li>
+	<li>"SEE ALL ASSEMBLIES" button</li>
+	<li>Acces an assembly</li>
+	<li>"PARTICIPATE" button</li>
+	<li>"MORE INFO" button</li>
+	<li>Return to home page via HOME button</li>
+	<li>Return to home page via LOGO button</li>
+	<li>Register button1</li>
+	<li>Register Button2</li>
+	<li>Bottom menus</li>
+	<li>Social network buttons</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div><a name="toc_1_1"></a>
+<h2 class="doclevel">1.1.Test Suite : Top Menu</h2>
+<div><p>Check that the top menu allows you to go from one page to the others and back to the home</p>
+</div><a name="toc_1_1_1"></a>
+<h3 class="doclevel">1.1.1.Test Suite : Language Menu</h3>
+<div><p>Functionality of the language menu.</p>
+</div><a name="toc_tc205"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-1: TC-CS-TM-LANGUAGE_MENU-CAT&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Decidim sites are multilanguage.</p>
+
+<p>There must be a pop-down menu in the upper part of the site to switch languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english</p>
+
+<p>This TC has to check out that the menu works correctly switching 
+between the different languages and the selected languages stays actives
+ even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>&nbsp;A decidim site has to be no-line.</p>
+
+<p>Use http://staging.decidim.codegram.com/</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>access the site decidim</p>
+
+<p>&nbsp;</p>
+</td><td><p>the site is online and fully loaded</p>
+</td></tr><tr><td width="5">2</td><td><p>hover to the language pop-down menu</p>
+</td><td><p>the pop-dowm menu appears and display the other languages</p>
+</td></tr><tr><td width="5">3</td><td><p>clic on the catalan option</p>
+</td><td><p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+</td></tr><tr><td width="5">4</td><td><p>assert that the top menu is in catalan</p>
+</td><td><p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>inici</li>
+	<li>processos</li>
+	<li>assemblees</li>
+	<li>més informació</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><p>assert that the following pages are in catalan:</p>
+
+<ol>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">inici</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">processos</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">assemblees</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">més informació</a></li>
+</ol>
+</td><td><p>Each Page must hav catalan text</p>
+</td></tr><tr><td width="5">6</td><td><p>Return to home page and assert that is in catalan</p>
+</td><td><p>the language menu must be in catalan and the text must be catalan</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc213"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-3: TC-CS-TM-LANGUAGE_MENU-ENGL&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Decidim sites are multilanguage.</p>
+
+<p>There must be a pop-down menu in the upper part of the site to switch languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english</p>
+
+<p>This TC has to check out that the menu works correctly switching 
+between the different languages and the selected languages stays actives
+ even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>&nbsp;A decidim site has to be no-line.</p>
+
+<p>Use http://staging.decidim.codegram.com/</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>access the site decidim</p>
+
+<p>&nbsp;</p>
+</td><td><p>the site is online and fully loaded</p>
+</td></tr><tr><td width="5">2</td><td><p>hover to the language pop-down menu</p>
+</td><td><p>the pop-dowm menu appears and display the other languages</p>
+</td></tr><tr><td width="5">3</td><td><p>clic on the english option</p>
+</td><td><p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+</td></tr><tr><td width="5">5</td><td><p>assert that the top menu is in english</p>
+</td><td><p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>home</li>
+	<li>processes</li>
+	<li>assemblies</li>
+	<li>more information</li>
+</ol>
+</td></tr><tr><td width="5">6</td><td><p>assert that the following pages are in english:</p>
+
+<ol>
+	<li>home</li>
+	<li>processes</li>
+	<li>assemblies</li>
+	<li>more information</li>
+</ol>
+</td><td><p>Each Page must have english text</p>
+</td></tr><tr><td width="5">7</td><td><p>Return to home page and assert that its in English</p>
+</td><td><p>the language menu must be in English and the text must be English</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc221"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-4: TC-CS-TM-LANGUAGE_MENU-SPAN&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Decidim sites are multilanguage.</p>
+
+<p>There must be a pop-down menu in the upper part of the site to switch languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english</p>
+
+<p>This TC has to check out that the menu works correctly switching 
+between the different languages and the selected languages stays actives
+ even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>&nbsp;A decidim site has to be no-line.</p>
+
+<p>Use http://staging.decidim.codegram.com/</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>access the site decidim</p>
+
+<p>&nbsp;</p>
+</td><td><p>the site is online and fully loaded</p>
+</td></tr><tr><td width="5">2</td><td><p>hover to the language pop-down menu</p>
+</td><td><p>the pop-dowm menu appears and display the other languages</p>
+</td></tr><tr><td width="5">3</td><td><p>clic on the castellano option</p>
+</td><td><p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+</td></tr><tr><td width="5">4</td><td><p>assert that the top menu is in castillano</p>
+</td><td><p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>inicio</li>
+	<li>procesos</li>
+	<li>asambleas</li>
+	<li>más información</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><p>assert that the following pages are in castillano:</p>
+
+<ol>
+	<li>inicio</li>
+	<li>procesos</li>
+	<li>asambleas</li>
+	<li>más información</li>
+</ol>
+</td><td><p>Each Page must have castillian text</p>
+</td></tr><tr><td width="5">6</td><td><p>Return to home page and assert that is in castillian</p>
+</td><td><p>the language menu must be in castellano and the text must be in castellano</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_1_1_2"></a>
+<h3 class="doclevel">1.1.2.Test Suite : Sign Up Page</h3>
+<div><p>Use of the Sign up menu and page.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username "<strong>user@example.org</strong>" and password "<strong>decidim123456</strong>") or you can login and explore as and <strong>Admin</strong> (username "<strong>admin@example.org</strong>" and password "<strong>decidim123456</strong>").</p>
+</div><a name="toc_tc230"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-9: TC-CS-TM-SIGN_UP-REGISTER&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test case will verify whethere user can succesfully access the the sign up page and sign up</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User should be in the sign up page</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>hover over the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+</td><td><p>the icon should change to a hand and the red bar should change color slightly</p>
+
+<ol>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>click on the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+</td><td><p>the page should change to the sign-UP page.</p>
+</td></tr><tr><td width="5">3</td><td><p>Fiel up the following fields:</p>
+
+<ol>
+	<li>your name</li>
+	<li>your short</li>
+	<li>your e-mail</li>
+</ol>
+</td><td><p>The following fields should show:</p>
+
+<ol>
+	<li>the entered name</li>
+	<li>the entered short</li>
+	<li>a valid e-mail address</li>
+</ol>
+</td></tr><tr><td width="5">4</td><td><p>Fill up the password fields with valid information:</p>
+
+<ol>
+	<li>enter the text in the new password field</li>
+	<li>repeat it in the new password field</li>
+</ol>
+</td><td><p>The followings fields show:</p>
+
+<ol>
+	<li>a masked password</li>
+	<li>a masked password</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><p>click the SIGN UP BUTTON</p>
+</td><td><p>go to the home page</p>
+
+<p>this message sshould appears:</p>
+
+<p>A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.</p>
+</td></tr><tr><td width="5">6</td><td><p>Confirmation e-mail</p>
+</td><td><p>user should receive a confirmation e-mail in the address provided in step 3</p>
+</td></tr><tr><td width="5">7</td><td><p>The e-mail shoud have the subject: confirmation instructions and the following text:</p>
+
+<p>"Welcome (e-mail address provided) !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p>Confirm my account</p>
+</td><td><p>The "Confirm my account" link should drive the user to the login page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc239"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-11: TC-CS-TM-SIGN_UP-LOG_IN&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test case will verify whethere user can succesfully access the the log-in page through the log in link in the Sign-Up page.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username "<strong>user@example.org</strong>" and password "<strong>decidim123456</strong>") or you can login and explore as and <strong>Admin</strong> (username "<strong>admin@example.org</strong>" and password "<strong>decidim123456</strong>").</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User should be in the sign up page</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSIÓ</p>
+
+<p>spanish: INICIAR SESIÓN</p>
+
+<p>BUTTON</p>
+</td><td><p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSIÓ</p>
+
+<p>spanish: INICIAR SESIÓN</p>
+
+<p>BUTTON</p>
+</td><td><p>the page should change to the log-in page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc243"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-14: TC-CS-TM-SIGN_UP-OTHER&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Check out that the other features of the SIGN-UP page work.</p>
+
+<ol>
+	<li>Upper "Log in" LINK</li>
+	<li>Receive an occasional newsletter with relevant information CHECK MARK</li>
+	<li>By signing up you agree to <a href="http://staging.decidim.codegram.com/pages/terms-and-conditions">the terms and conditions of use</a>. CHECK MARK</li>
+	<li><a href="http://staging.decidim.codegram.com/pages/terms-and-conditions">"the terms and conditions of use"</a> LINK</li>
+	<li>Lower "Log in" LINK</li>
+	<li><a href="http://staging.decidim.codegram.com/users/password/new">Forgot your password? LINK</a></li>
+	<li>Didn't receive confirmation instructions? LINK</li>
+</ol>
+
+<p>All these features have a low priority and importance because all of 
+them can be solved from other places or have no significant impact in 
+the user experirience.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Low</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc245"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-15: TC-CS-TM-SIGN_UP-REGISTER_NEGATIVE&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test 
+case will verify whethere user can succesfully access the the sign up 
+page and can not sign up unless the correct information is provided</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User should be in the sign up page</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>hover over the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+</td><td><p>the icon should change to a hand and the red bar should change color slightly</p>
+
+<ol>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>click on the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+</td><td><p>the page should change to the sign-UP page.</p>
+</td></tr><tr><td width="5">3</td><td><p>Fiel up the following fields:</p>
+
+<ol>
+	<li>your name</li>
+	<li>your short</li>
+	<li>your e-mail</li>
+</ol>
+</td><td><p>The following fields should show:</p>
+
+<ol>
+	<li>the entered name</li>
+	<li>the entered short</li>
+	<li>a valid e-mail address</li>
+</ol>
+</td></tr><tr><td width="5">4</td><td><p>Fill up the password fields with valid information:</p>
+
+<ol>
+	<li>enter the text in the new password field</li>
+	<li>repeat it in the new password field</li>
+</ol>
+</td><td><p>The followings fields show:</p>
+
+<ol>
+	<li>a masked password</li>
+	<li>a masked password</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><p>click the SIGN UP BUTTON</p>
+</td><td><p>go to the home page</p>
+
+<p>this message sshould appears:</p>
+
+<p>A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_1_1_3"></a>
+<h3 class="doclevel">1.1.3.Test Suite : Sign In Page</h3>
+<div><p>Use of the SIGN IN&nbsp; button and the login page.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username "<strong>user@example.org</strong>" and password "<strong>decidim123456</strong>") or you can login and explore as and <strong>Admin</strong> (username "<strong>admin@example.org</strong>" and password "<strong>decidim123456</strong>").</p>
+</div><a name="toc_tc253"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-5: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-invalid user valid password&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Last edit by:</span></td><td colspan="3">decidim</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test case will verify the behavior of webpage when user enteres an invalid username with valid password</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User should be in the login page</p>
+
+<p>There should be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user should be already created active user accounts.</p>
+
+<p>The user information and the admin information have been provided through https://decidim.org/demo/ on 28-III-2018</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Enter a invalid username</p>
+
+<p>user:<strong>error@example.org</strong></p>
+</td><td><ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><p>Enter a valid password:</p>
+
+<p>user:<strong>decidim123456</strong></p>
+</td><td><p>User should be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+</td></tr><tr><td width="5">4</td><td><p>click on the login button</p>
+</td><td><p>warning message shall be displayed to the user</p>
+
+<p>message cat: Invalid Correu electrònic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electrónico o contraseña inválida.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc258"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-6: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_POSITIVE&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Last edit by:</span></td><td colspan="3">decidim</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This Test Case will verify whether a user can successfully log into the sign in page with a valid username and a valid password.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username "<strong>user@example.org</strong>" and password "<strong>decidim123456</strong>") or you can login and explore as and <strong>Admin</strong> (username "<strong>admin@example.org</strong>" and password "<strong>decidim123456</strong>").</p>
+
+<p>The log in page is refered as sign in page</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User should be in the login page</p>
+
+<p>There should be a user name and a password provided after signing up 
+in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user shave an active user or admin account</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Enter a valid username</p>
+
+<p>user:<strong>user@example.org</strong></p>
+</td><td><ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name shall be displayed to the user</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>Enter a valid password:</p>
+
+<p><strong>decidim123456</strong></p>
+</td><td><p>User shall be able to type in the password field</p>
+
+<p>Entered password shall be masked</p>
+</td></tr><tr><td width="5">3</td><td><p>click on the login button</p>
+</td><td><p>User should be redirected to the homepage</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc263"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-7: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-invalid user invalid password&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Last edit by:</span></td><td colspan="3">decidim</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test case will verify the behavior of webpage when user enteres an invalid username with an invalid password</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User shall be in the login page</p>
+
+<p>There shall be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user must have a user or admin account</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Enter a valid username</p>
+
+<p>user:<strong>error@example.org</strong></p>
+
+<p>&nbsp;</p>
+</td><td><ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name shall be displayed to the user</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>Enter an invalid password:</p>
+
+<p>user:decidim</p>
+</td><td><p>User shall be able to type in password field</p>
+
+<p>Entered password shall be masked</p>
+</td></tr><tr><td width="5">3</td><td><p>click on the login button</p>
+</td><td><p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electrònic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electrónico o contraseña inválida.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc268"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-8: TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-valid user invalid password&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Last edit by:</span></td><td colspan="3">decidim</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test case will verify the behavior of webpage when user enteres an valid username with an invalid password</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User shall be in the login page</p>
+
+<p>There shall be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user shall be already created and active.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Enter an valid username</p>
+
+<p>user:<strong>user@example.org</strong></p>
+</td><td><ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>Enter an invalid password:</p>
+
+<p>user:decidim</p>
+</td><td><p>User shall be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+</td></tr><tr><td width="5">3</td><td><p>click on the login button</p>
+</td><td><p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electrònic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electrónico o contraseña inválida.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc273"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-10: TC-CS-TM-SIN_IN_PAGE-LOG_IN_BUTTON&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Last edit by:</span></td><td colspan="3">decidim</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test 
+case will verify whethere user can succesfully access the the sign in 
+page through the LOG-IN BUTTON in the sign-up page.</p>
+
+<p>Attention, in some places the sign-in page is refered as log in and the sign-up as register</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User shall be in the sign up page</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSIÓ</p>
+
+<p>spanish: INICIAR SESIÓN</p>
+
+<p>BUTTON</p>
+</td><td><p>the icon will change to a hand</p>
+
+<ol>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSIÓ</p>
+
+<p>spanish: INICIAR SESIÓN</p>
+
+<p>BUTTON</p>
+</td><td><p>the page will change to the log-in page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc277"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-12: TC-CS-TM-SIN_IN_PAGE-SIGN_UP&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>This test case will verify whethere user can succesfully access the the sign in page through the LOG-IN BUTTON.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username "<strong>user@example.org</strong>" and password "<strong>decidim123456</strong>") or you can login and explore as and <strong>Admin</strong> (username "<strong>admin@example.org</strong>" and password "<strong>decidim123456</strong>").</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>User should be in the sign up page</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSIÓ</p>
+
+<p>spanish: INICIAR SESIÓN</p>
+
+<p>BUTTON</p>
+</td><td><p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSIÓ</p>
+
+<p>spanish: INICIAR SESIÓN</p>
+
+<p>BUTTON</p>
+</td><td><p>the page should change to the log-in page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>smoke<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc281"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-13: TC-CS-TM-SIN_IN_PAGE-OTHER&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Check out that the other features of the log-in page work.</p>
+
+<ol>
+	<li>Create an account LINK</li>
+	<li>Remeber CHECK MARK</li>
+	<li>Sign up LINK</li>
+	<li>Forgot your password LINK</li>
+	<li>Didn't receive confirmation instructions? LINK</li>
+</ol>
+
+<p>All these features have a low priority and importance because all of 
+them can be solved from other places or have no significant impact in 
+the user experirience.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Low</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc283"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-16: TC-CS-TM-NAVIGATION_BAR&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Last edit by:</span></td><td colspan="3">decidim</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>From the home page each visitor has to be able to go at least to the following sections ussing the "top menu":</p>
+
+<p>CAT: INICI-PROCESSOS-ASSEMBLEES-INICIATIVES-MULTICONSULTES-MÉS INFORMACIÓ</p>
+
+<p>SPA: INICIO-PROCESOS-ASAMBLEAS-INICIATIVAS-MULTICONSULTAS-MÁS INFORMACIÓN</p>
+
+<p>ENG: HOME-PROCESSES-ASSEMBLIES-INITIATIVES-CONSULTATIONS-MORE INFORMATION</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>Be in the home page.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>Hover the HOME BUTTON</li>
+	<li>Hover the PROCESSES BUTTON</li>
+	<li>Hover the ASSEMBLIES BUTTON</li>
+	<li>Hover the INITIATIVES BUTTON</li>
+	<li>Hover the CONSULTATIONS BUTTON</li>
+	<li>Hover the MORE INFORMATION BUTTON</li>
+</ol>
+</td><td><p>&nbsp;The text get highlighted when mouse hovers over the different menus</p>
+</td></tr><tr><td width="5">2</td><td><p>click the HOME BUTTON</p>
+</td><td><p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the Home page.</p>
+</td></tr><tr><td width="5">3</td><td><p>click the PROCESSES BUTTON</p>
+</td><td><p>A red strip appears over the button</p>
+
+<p>Stay at or acces&nbsp;the PROCESSES page.</p>
+</td></tr><tr><td width="5">4</td><td><p>click the ASSEMBLIES BUTTON</p>
+</td><td><p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the ASSEMBLIES page.</p>
+</td></tr><tr><td width="5">5</td><td><p>click the INITIATIVES BUTTON</p>
+</td><td><p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the INITIATIVES page.</p>
+</td></tr><tr><td width="5">6</td><td><p>click the CONSULTATIONS BUTTON</p>
+</td><td><p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the CONSULTATIONS page.</p>
+</td></tr><tr><td width="5">7</td><td><p>click the MORE INFORMATION BUTTON</p>
+</td><td><p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the MORE INFORMATION page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc292"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-35: TC-CS-TM-TITLE_BAR&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Over the 
+navigation bar and under the omnipresent banner, there is a bar with 
+some icons drop down menus and links. It allows you to see the logo to 
+select the language and depending on your status (visitor-user/admin e.i
+ either you have logged in or not) you may have acces to your 
+notifications, your conversations and your account in case you already 
+logged in as user/admin or you visualize the links to the log in page or
+ the sign-up page.</p>
+
+<p>This strip from the web stays always visible unless you are inside the dashboard page.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Click on your organization logo &lt;logo-wrapper&gt; in the left part of the area</p>
+</td><td><p>On hover the mouse icon should change to the hand icon and 
+on click you should be redirected to the referenced page. Most likely 
+the home page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc295"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-36: TC-CS-TM-OMNIPRESENT_AND_COOKIES&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>On top the
+ navigation bar there are the omnipresent bar which may hold a news or 
+warning message with a link and the acceptance message for the cookies.</p>
+
+<p>A screenshot has been uploaded for you to clearly identify those bars :You'll find the image on the lower part of this window</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>On top the navigation bar there is the omnipresent bar which may hold a news or warning message with a link.</p>
+</td><td><p>Click on the link and the linked page has to open</p>
+</td></tr><tr><td width="5">2</td><td><p>On top the navigation bar there is the acceptance message for the cookies with an "I agree" accept BUTTON</p>
+</td><td><p>Click on the accept BUTTON and the message must vanish</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Low</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>castella<br>catalan<br>english<br>functional<br>smoke<br>usability<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_1_2"></a>
+<h2 class="doclevel">1.2.Test Suite : Profile Menu</h2>
+<div><p>Once a user is logged the sign-in menu turns into the Profile 
+Menu. A drop-dowm menu that allows the user to acces different options 
+related with his/her profile and actions.</p>
+
+<p>If you are an admin, from this menu you can access the Dashboard 
+section. Due to the fact that somoe options like the Dashboard or the 
+account are quite big their will have their own suit of tests</p>
+</div><a name="toc_tc300"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-23: TC-CS-PM-PROFILE_MENU&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>The drop-down menu has the folowing options (if you are not an admin, you don't have acces to the Admin dashboard option)</p>
+
+<ol>
+	<li>My account</li>
+	<li>My public profile</li>
+	<li>Notifications</li>
+	<li>Conversations</li>
+	<li>Admin dashboard</li>
+	<li>Sign out</li>
+</ol>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>Logged as admin. After clicking in the admin option you have to go back to the home menu because the profile menu dissapears</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the My account option</li>
+	<li>Click on My account option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The account page opens up</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the My public profile option</li>
+	<li>Click on My public profile option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The My public profile page opens up</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Notifications option</li>
+	<li>Click on Notifications option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The Notifications page opens up</li>
+</ol>
+</td></tr><tr><td width="5">4</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Conversations option</li>
+	<li>Click on&nbsp;Conversations option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The Conversations page opens up</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Admin dashboard option</li>
+	<li>Click on&nbsp;Admin dashboard option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The Admin dashboard page opens up</li>
+</ol>
+</td></tr><tr><td width="5">6</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Sign out option</li>
+	<li>Click on&nbsp;Sign out option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The log in page appears and you are logged out</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_1_2_1"></a>
+<h3 class="doclevel">1.2.1.Test Suite : Account</h3>
+<div><p>The my account option has the following submenus:</p>
+
+<ol>
+	<li>Account</li>
+	<li>Notifications Settings</li>
+	<li>Authorizations</li>
+	<li>Organizations (only if the user sign up a s organization)</li>
+	<li>Delete my account</li>
+</ol>
+</div><a name="toc_tc309"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-24: TC-CS-PM-MY_ACCOUNT-ACCOUNT&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Validate the different options from the Account page.</p>
+
+<p>It will be necessary to break it in different Test Cases for the different options, but so far the TC is for al the options</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;Account&gt;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the My account option</li>
+	<li>Click on My account option</li>
+</ol>
+</td><td><ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The account page opens up</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p>Avatar BUTTON Navegate.</p>
+
+<p>Click</p>
+</td><td><p>Allows you to navegate to a folder with pictures and select one</p>
+</td></tr><tr><td width="5">3</td><td><p>Select an image</p>
+</td><td><p>The selected image is displayed</p>
+</td></tr><tr><td width="5">4</td><td><p>The following fields should have already the text provided in the registration process:</p>
+
+<p>Your Name</p>
+
+<p>Your short</p>
+
+<p>Your e-mail</p>
+</td><td><p>The fields have already the text provided in the registration process:</p>
+</td></tr><tr><td width="5">5</td><td><p>there is a sign/warning for the requiered fields</p>
+</td><td><p>&nbsp;an * on hover displays a requiered warning.</p>
+
+<p>The fields with the * have a warning if they are left empty</p>
+</td></tr><tr><td width="5">6</td><td><table>
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>Change the text in the following fields</p>
+
+			<p>Your Name</p>
+
+			<p>Your short</p>
+
+			<p>Your e-mail</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td><td><p>The text has to appear correctly in the text fields.</p>
+
+<p>The names have to be unique and the e-mail field accepts only e-mail addresses</p>
+</td></tr><tr><td width="5">7</td><td><p>Add a personal URL</p>
+</td><td><p>the URL has to appear correctly</p>
+</td></tr><tr><td width="5">8</td><td><p>About. Text field to add more information</p>
+</td><td><p>The text has to appear clearly in the text field</p>
+</td></tr><tr><td width="5">9</td><td><p>click on change password BUTTON</p>
+</td><td><p>A submenu is displayed with two fields:</p>
+
+<ol>
+	<li>New Password</li>
+	<li>Confirm your password</li>
+</ol>
+</td></tr><tr><td width="5">10</td><td><p>writte a new password in the text field</p>
+</td><td><p>the text has to appear masked in the text field</p>
+</td></tr><tr><td width="5">11</td><td><p>writte again the password in the "Confirm your new password" field</p>
+</td><td><p>the text has to appear masked in the text field</p>
+</td></tr><tr><td width="5">12</td><td><p>click the Update Account BUTTON</p>
+</td><td><p>The page should update the changes made in it and a message is displayed:</p>
+
+<p>Your account was updated successfully.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc323"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-25: TC-CS-PM-MY_ACCOUNT-NOTIFICATION_SETTINGS&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>A page with two SWITCH paddle</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;Notifications settings&gt;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Click on switch "I want to receive an email every time I receive a notification"</p>
+</td><td><p>The switch will switch from red to gray or vice-versa</p>
+</td></tr><tr><td width="5">2</td><td><p>Click on SWITCH "I want to receive newsletters"</p>
+</td><td><p>The SWITCH will switch from red to gray or vice-versa</p>
+</td></tr><tr><td width="5">3</td><td><p>click on SAVE CHANGES BUTTON</p>
+</td><td><p>On hover the mouse changes to hand icon and on click a message apears:</p>
+
+<p>Your notifications settings were updated successfully.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc328"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-26: TC-CS-PM-MY_ACCOUNT-DELETE_MY_ACCOUNT&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Validate the delete account option</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;delete my account&gt;</p>
+
+<p>the account will be deleted so create a new user jo to test this option</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>The message: "This action cannot be undone. If you delete your account you won't be able to log in."&nbsp; has to be visible.</p>
+</td><td><p>The message is visible.</p>
+
+<p>&nbsp;
+</p><p>&nbsp;</p>
+<p></p>
+</td></tr><tr><td width="5">2</td><td><p>click on Delete my Account BUTTON.</p>
+</td><td><p>The warning message appears</p>
+
+<p>there is a "Yes, I want to delete my account" BUTTON.</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td width="5">3</td><td><p>A warning "Are you sure you want to delete your account?" appears with a "Yes, I want to delete my account" BUTTON.</p>
+
+<p>click on the: "Yes, I want to delete my account" BUTTON.</p>
+</td><td><p>The message is visible.</p>
+
+<p>The Home page is displayed</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td width="5">4</td><td><p>Go to the sign in page and try to sign in with the user that has been deleted</p>
+</td><td><p>You are not able to log-in.</p>
+
+<p>The message: Invalid Email or password. is visible.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc334"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-27: TC-CS-PM-MY_ACCOUNT-ORGANIZATIONS&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;Organizations&gt;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>The organization/s name is displayed</p>
+
+<p>There is a TAG displaying the status "Verified" or not.</p>
+</td><td><p>The text is visible and there is a status TAG</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Low</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_1_2_2"></a>
+<h3 class="doclevel">1.2.2.Test Suite : Authorizations</h3>
+<div><p>THIS INFORMATION HAS TO GO TO THE REQUIEREMENTS SECTION.</p>
+
+<p>Decidim offers several methods for allowing participants to get 
+authorization to perform certain privileged actions. This module 
+implements several of those methods and also offers a way for 
+installation to implement their custom verification methods.</p>
+
+<p>Each decidim instance is in full control of its authorizations, and can customize:</p>
+
+<ul>
+	<li>
+	<p>The different methods to be used by users to get verified. For 
+example, through a census, by uploading their identity documents, or by 
+receiving a verification home at their address.</p>
+	</li>
+	<li>
+	<p>The different actions in decidim that require authorization, and 
+which authorization method they require. For example, a decidim instance
+ might choose to require census authorization to create proposals, but a
+ fully verified address via a verification code sent by postal mail for 
+voting on proposals.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Decidim implements two type of authorization methods:</p>
+
+<ul>
+	<li>
+	<p><em>Form authorizations</em>.</p>
+
+	<p>When your verification method is simple enough, you can use a 
+Rectify::Form to implement it. "Simple" here means that the 
+authorization can be granted with the submission of a single form. For 
+example, to validate a user against a census API you will need a form 
+with some fields that your users will use to authenticate against a 
+census (for example, an ID and a Postal Code)</p>
+	</li>
+	<li>
+	<p><em>Workflow authorizations</em>.</p>
+
+	<p>For more complex scenarios requiring several steps or admin intervention, you can register a verification flow.</p>
+	</li>
+</ul>
+
+<h2>Custom action authorizers</h2>
+
+<p>Custom action authorizers are an advanced component that can be used 
+in both types of authorization methods to customize some parts of the 
+authorization process. These are particulary useful when used within 
+verification options, which are set in the admin zone related to a 
+component action. As a result, a verification method will be allowed to 
+change the authorization logic and the appearance based on the context 
+where the authorization is being performed.</p>
+
+<p>For example, you can require authorization for supporting proposals 
+in a participatory process, and also restrict it to users with postal 
+codes 12345 and 12346.</p>
+
+<p>&nbsp;</p>
+
+<p>Detailed information:</p>
+
+<p><a href="https://github.com/decidim/decidim/tree/master/decidim-verifications">https://github.com/decidim/decidim/tree/master/decidim-verifications</a></p>
+
+<p>Authorization:</p>
+
+<p><a href="https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/authorizations_spec.rb">https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/authorizations_spec.rb</a></p>
+
+<p>Action Authorization:</p>
+
+<p><a href="https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/action_authorization_spec.rb">https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/action_authorization_spec.rb</a></p>
+
+<p>Postal letter code authorization:</p>
+
+<p><a href="https://github.com/decidim/decidim/tree/master/decidim-verifications/spec/system/postal_letter">https://github.com/decidim/decidim/tree/master/decidim-verifications/spec/system/postal_letter</a></p>
+</div><a name="toc_tc338"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-28: TC-CS-PM-AUTHORIZATIONS-IDENTITY_DOC&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>A page to validate identity.</p>
+
+<p>There are three links:</p>
+
+<ol>
+	<li>Identity documents</li>
+	<li>Code by postal letter</li>
+	<li>Example authorization</li>
+</ol>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;Authorizations&gt;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Click "Identity documents" BUTTON</p>
+</td><td><p>opens a page to upload your identity document</p>
+</td></tr><tr><td width="5">2</td><td><p>Select the type of document from the Drop Down menu by clicking in the "Please select" text.</p>
+</td><td><p>A drop dowm menu with the options DNI, NIE, Passport (or similars) appears</p>
+</td></tr><tr><td width="5">3</td><td><p>Select a type of document</p>
+</td><td><p>The "Please Select" text changes to the type of document selected</p>
+</td></tr><tr><td width="5">4</td><td><p>Enter a valid ID number with the correct format.</p>
+
+<p>(ATTENTION THE FORMAT SO FAR HAS NOT BEEN DEFINED)</p>
+</td><td><p>The numbers should appear in the text field</p>
+</td></tr><tr><td width="5">5</td><td><p>Uload a scanned copy of your document.</p>
+
+<p>Click on the NAVEGATION BUTTON</p>
+</td><td><p>A file browser appears and you cn upload an image</p>
+</td></tr><tr><td width="5">6</td><td><p>CLick on the Request Verification BUTTON</p>
+</td><td><p>Your send back to the Authorizations page. The lock icon 
+before the "Identiy documents" change to a sort of recicle circular 
+arrow.</p>
+</td></tr><tr><td width="5">7</td><td><p>click on the "Identity documents" BUTTON</p>
+</td><td><p>A message apears: "We're reviewing your documents. You'll be verified shortly"</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc347"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-29: TC-CS-PM-AUTHORIZATIONS-CODE_POSTAL_LETTER&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>A page to validate identity.</p>
+
+<p>There are three links:</p>
+
+<ol>
+	<li>Identity documents</li>
+	<li>Code by postal letter</li>
+	<li>Example authorization</li>
+</ol>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;Authorizations&gt;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Click "Code by postal letter" BUTTON</p>
+</td><td><p>opens a page to enter your address</p>
+</td></tr><tr><td width="5">2</td><td><p>Enter your full address in the text field</p>
+</td><td><p>The address must be visible</p>
+</td></tr><tr><td width="5">3</td><td><p>CLick on the Send me a letter BUTTON</p>
+</td><td><p>The User settings page is displayed with the message: "Thanks! We'll send a verification code to your address"</p>
+
+<p>The lock icon before the "Identiy documents" change to a sort of recicle circular arrow.</p>
+</td></tr><tr><td width="5">4</td><td><p>Click "Code by postal letter" BUTTON</p>
+</td><td><p>A message apears: "We'll be sending a letter to your address with your verification code soon"</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc353"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-30: TC-CS-PM-AUTHORIZATIONS-EXAMPLE_AUTHORIZATION&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>A page to validate identity.</p>
+
+<p>There are three links:</p>
+
+<ol>
+	<li>Identity documents</li>
+	<li>Code by postal letter</li>
+	<li>Example authorization</li>
+</ol>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>select the submenu &lt;Authorizations&gt;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Click the "Example authorization" BUTTON</p>
+</td><td><p>opens a page with some text field and a verification button</p>
+</td></tr><tr><td width="5">2</td><td><p>Enter your full text in the text and data field</p>
+</td><td><p>The text must be visible</p>
+</td></tr><tr><td width="5">3</td><td><p>CLick on the Send BUTTON</p>
+</td><td><p>The User settings page is displayed with the message: "You've been successfully authorized."</p>
+
+<p>The lock icon before the "example authorization" changes to open lock
+ and displays somthing similar to: "Granted at March 30, 2018 18:24 
+Expires at March 30, 2018 19:24"</p>
+</td></tr><tr><td width="5">4</td><td><p>Click "Code by postal letter" BUTTON</p>
+</td><td><p>A message apears: "We'll be sending a letter to your address with your verification code soon"</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">High</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_1_3"></a>
+<h2 class="doclevel">1.3.Test Suite : Footer Menu</h2>
+<div><p>Different BUTTONS and LINKS in the footer section</p>
+</div><a name="toc_tc360"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-32: TC-FM-FOOTER_MENU&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Web footer.</p>
+
+<p>Check out the different links, the social network icons and the logo and creative commons icons.</p>
+
+<p>Attention, the number of links in the &lt;footer-nav&gt;may be more 
+then the three that exist by default and not all the social networks 
+have to be available.</p>
+
+<p>The links in the &lt;footer-nav&gt; are also the links in the information page</p>
+
+<p>On top of the footer menus there is a text that says:</p>
+
+<p>"Welcome to Beier-Lindgren participatory platform. Let's build a more
+ open, transparent and collaborative society.Join, participate and 
+decide."</p>
+
+<p>And after this text there is REGISTER BUTTON.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>Return to footer's home page after you assert that a link works.</p>
+
+<p>There are four links in the footer nav menu.</p>
+
+<p>All the social network icons are on display</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=360&amp;tcversion_id=361&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D360%26show_mode%3Dundefined&amp;step_id=362">Hover the mouse over the (register) BUTTON and click on it</a></p>
+</td><td><p>The Sign Up page is displayed.</p>
+
+<p>Most likely: http://staging.decidim.codegram.com/users/sign_up</p>
+</td></tr><tr><td width="5">2</td><td><p>On top of the footer menus there must appear a text that says:</p>
+
+<p>"Welcome to Beier-Lindgren participatory platform. Let's build a more
+ open, transparent and collaborative society.Join, participate and 
+decide."</p>
+</td><td><p>On top of the footer menus there is indeed a text that says:</p>
+
+<p>"Welcome to Beier-Lindgren participatory platform. Let's build a more
+ open, transparent and collaborative society.Join, participate and 
+decide."</p>
+
+<p>And after this text there is REGISTER BUTTON.</p>
+</td></tr><tr><td width="5">3</td><td><p>Hover the mouse over the (title for terms-and-conditions LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the terms-and-conditions page is displayed.</p>
+</td></tr><tr><td width="5">4</td><td><p>Hover the mouse over the (title for initiatives) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the initiatives page is displayed.</p>
+</td></tr><tr><td width="5">5</td><td><p>Hover the mouse over the social network icons and click on each LINK.</p>
+</td><td><p>&nbsp;The icons get highlighted and on click the user page of each social network is displayed in a new window</p>
+</td></tr><tr><td width="5">6</td><td><p>Hover the mouse over the creative commons icons and click on it.</p>
+</td><td><p>The creative commons license page is displayed in a new window</p>
+
+<p>Most likely:</p>
+
+<p>https://creativecommons.org/licenses/by-sa/4.0/</p>
+</td></tr><tr><td width="5">7</td><td><p>Hover the mouse over the "free software" link and click on it</p>
+</td><td><p>&nbsp;The text gets highlighted and on click the dedidim page on github is displayed in a new window</p>
+
+<p>Most likely: https://github.com/decidim/decidim</p>
+</td></tr><tr><td width="5">8</td><td><p>Hover the mouse over the Decidim logo and click on it</p>
+</td><td><p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+</td></tr><tr><td width="5">9</td><td><p>Hover the mouse over the (title for accessibility) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the accessibility page is displayed.</p>
+</td></tr><tr><td width="5">10</td><td><p>Hover the mouse over the (title for faq) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the faq page is displayed.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_2"></a>
+<h1 class="doclevel">2.Test Suite : Processes Page</h1>
+<div><p>Functionality of the Processes page</p>
+</div><a name="toc_tc371"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-34: TC-PP-PROCESSES_PAGE&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Processes page.</p>
+
+<p>Assert that the common elements are on display: top menu, menu bar, 
+footer. This is tagged in the TC as an automated assert but it can be 
+done manually as well and it will be easier.</p>
+
+<p>Check out the different links.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>Return to the processes page after you assert that a link works.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Assert that the title "Highlighted processes" is present</p>
+</td><td><p>the "Highlighted processes" title is present</p>
+</td></tr><tr><td width="5">2</td><td><p>In the "Highlighted processes" 
+section, hover the mouse over the white frame surrounding the assemblie 
+title and click on it if the coursor changes to a hand..</p>
+</td><td><p>on click the page for this particular processes is displayed in a new window</p>
+</td></tr><tr><td width="5">3</td><td><p>In the "Highlighted processes" area, hover the mouse over the MORE INFO BUTTON inside the area of an assemblie and click on it</p>
+</td><td><p>&nbsp;The mouse changes to a hand, the BUTTON change its 
+color and, on click, the processes page of this particular processes is 
+loaded</p>
+</td></tr><tr><td width="5">4</td><td><p>In the "Highlighted processes" area, hover the mouse over the TAKE PART BUTTON inside the image of an processes and click on it</p>
+</td><td><p>&nbsp;The mouse changes to a hand, the BUTTON changes colors
+ and on click, the processes page of this particular processes is loaded</p>
+</td></tr><tr><td width="5">5</td><td><p>In the "Highlighted processes" section, hover the mouse over the (title for a processes) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;On click the page for this particular processes is displayed.</p>
+</td></tr><tr><td width="5">6</td><td><p>Assert that the Processes title with the number of displayed processes is visible</p>
+</td><td><p>The "X processes" title is visible.</p>
+</td></tr><tr><td width="5">7</td><td><p>In the "X processes" section, hover the mouse over the (title for an processes) and click on the LINK.</p>
+</td><td><p>&nbsp;On click the page for this particular processes is displayed.</p>
+</td></tr><tr><td width="5">8</td><td><p>In the "X processes" area, hover the mouse over the TAKE PART BUTTON inside the image of a processes and click on it</p>
+</td><td><p>&nbsp;The mouse changes to a hand, the BUTTON changes colors
+ and on click, the processes page of this particular processes is loaded</p>
+</td></tr><tr><td width="5">9</td><td><p>Hover the mouse over the processes BUTTON in the menu bar and click on it just to validate that the menu bar is available</p>
+</td><td><p>&nbsp;The Processes page is reloaded</p>
+</td></tr><tr><td width="5">10</td><td><p>Validate that the omnipresent bar that includes the omnipresent banner tittle is in the page</p>
+</td><td><p>The omnipresent bar is in the page</p>
+</td></tr><tr><td width="5">11</td><td><p>Validate that the top bar that includes the language menu, some icons and the account menu is in the page</p>
+</td><td><p>The top bar is in the page</p>
+</td></tr><tr><td width="5">12</td><td><p>Hover the mouse over the Decidim logo and click on it just to validate that the lower part of the footer is available</p>
+</td><td><p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+</td></tr><tr><td width="5">13</td><td><p>Assert tha the PAST, ACTIVE, UPCOMING AND ALL BUTTONS are working fine</p>
+</td><td><p>Each BUTTON has to filter the different processes on display
+ acordingly its function (past process, active process, upcoming process
+ and all)</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_3"></a>
+<h1 class="doclevel">3.Test Suite : Assemblies Page</h1>
+<div><p>Functionalities of the Assemblies window</p>
+</div><a name="toc_tc387"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-33: TC-AP-ASSEMBLIES_PAGE&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>Assemblies page.</p>
+
+<p>Assert that the common elements are on display: top menu, menu bar, 
+footer. This is tagged in the TC as an automated assert but it can be 
+done manually as well and it will be easier.</p>
+
+<p>Check out the different links.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>Return to the assemblies page after you assert that a link works.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Assert that the title "Highlighted assemblies" is present</p>
+</td><td><p>the "Highlighted assemblies" title is present</p>
+</td></tr><tr><td width="5">2</td><td><p>In the "Highlighted assemblies"
+ section, hover the mouse over the white frame surrounding the assemblie
+ title and click on it if the coursor changes to a hand..</p>
+</td><td><p>on click the page for this particular assembly is displayed in a new window</p>
+</td></tr><tr><td width="5">3</td><td><p>In the "Highlighted assemblies" area, hover the mouse over the MORE INFO BUTTON inside the area of an assemblie and click on it</p>
+</td><td><p>&nbsp;The mouse changes to a hand, the BUTTON change its 
+color and, on click, the assembliy page of this particular assembly is 
+loaded</p>
+</td></tr><tr><td width="5">4</td><td><p>In the "Highlighted assemblies" area, hover the mouse over the TAKE PART BUTTON inside the image of an assemblie and click on it</p>
+</td><td><p>&nbsp;The mouse changes to a hand, the BUTTON changes colors
+ and on click, the assembliy page of this particular assembly is loaded</p>
+</td></tr><tr><td width="5">5</td><td><p>In the "Highlighted assemblies" section, hover the mouse over the (title for an assemblie) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;On click the page for this particular assembly is displayed.</p>
+</td></tr><tr><td width="5">6</td><td><p>Assert that Assemblies title with the number of displayed assemblies is visible</p>
+</td><td><p>The "X Assemblies" title is visible.</p>
+</td></tr><tr><td width="5">7</td><td><p>In the "X Assemblies" section, hover the mouse over the (title for an assemblie) and click on the LINK.</p>
+</td><td><p>&nbsp;On click the page for this particular assembly is displayed.</p>
+</td></tr><tr><td width="5">8</td><td><p>In the "X Assemblies" area, hover the mouse over the TAKE PART BUTTON inside the image of an assemblie and click on it</p>
+</td><td><p>&nbsp;The mouse changes to a hand, the BUTTON changes colors
+ and on click, the assembliy page of this particular assembly is loaded</p>
+</td></tr><tr><td width="5">9</td><td><p>Hover the mouse over the Assemblies BUTTON in the menu bar and click on it just to validate that the menu bar is available</p>
+</td><td><p>&nbsp;The Assemblies page is reloaded</p>
+</td></tr><tr><td width="5">10</td><td><p>Validate that the omnipresent bar that includes the omnipresent banner tittle is in the page</p>
+</td><td><p>The omnipresent bar is in the page</p>
+</td></tr><tr><td width="5">11</td><td><p>Validate that the top bar that includes the language menu, some icons and the account menu is in the page</p>
+</td><td><p>The top bar is in the page</p>
+</td></tr><tr><td width="5">12</td><td><p>Hover the mouse over the Decidim logo and click on it just to validate that the lower part of the footer is available</p>
+</td><td><p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_4"></a>
+<h1 class="doclevel">4.Test Suite : More Information Page</h1>
+<div><p>Functionalities of the More Information page</p>
+</div><a name="toc_tc402"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-21: TC-MIP-MORE_INFORMATION_PAGE&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>More information page.</p>
+
+<p>Assert that the common elements are on display: top menu, menu bar, 
+footer. This is tagged as an automated assert but it can be done 
+manually as well and it will be easier.</p>
+
+<p>Check out the different links.</p>
+
+<p>Attention, the number of links may be more than the three that exist by default</p>
+
+<p>The links in the &lt;footer-nav&gt; are also the links in the information page</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>Return to the more information page after you assert that a link works.</p>
+
+<p>There are four links for this Test Case but you have to adapt it to the number of links in your page</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Hover the mouse over the (title for faq) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the faq page is displayed.</p>
+</td></tr><tr><td width="5">2</td><td><p>Hover the mouse over the (title for accessibility) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the accessibility page is displayed.</p>
+</td></tr><tr><td width="5">3</td><td><p>Hover the mouse over the (title for terms-and-conditions LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the terms-and-conditions page is displayed.</p>
+</td></tr><tr><td width="5">4</td><td><p>Hover the mouse over the (title for initiatives) LINK and click on the LINK.</p>
+</td><td><p>&nbsp;The link gets highlighted and on click the initiatives page is displayed.</p>
+</td></tr><tr><td width="5">5</td><td><p>Hover the mouse over the social
+ network icons and click on one LINK just to validate that the uper part
+ of the footer is in the page</p>
+</td><td><p>&nbsp;The icon gets highlighted and on click the user page of the social network is displayed in a new window</p>
+</td></tr><tr><td width="5">6</td><td><p>Hover the mouse over the More information BUTTON in the menu bar and click on it just to validate that the menu bar is available</p>
+</td><td><p>&nbsp;The More Information page is reloaded</p>
+</td></tr><tr><td width="5">7</td><td><p>Hover the mouse over the Decidim logo and click on it just to validate that the lower part of the footer is available</p>
+</td><td><p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+</td></tr><tr><td width="5">8</td><td><p>Validate that the omnipresnt bar that includes the omnipresent banner tittle is in the page</p>
+</td><td><p>The omnipresent bar is in the page</p>
+</td></tr><tr><td width="5">9</td><td><p>Validate that the top bar that includes the language menu, some icons and the account menu is in the page</p>
+</td><td><p>The top bar is in the page</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_5"></a>
+<h1 class="doclevel">5.Test Suite : Home Page</h1>
+<div><p>Functionality of the Home page</p>
+</div><a name="toc_5_1"></a>
+<h2 class="doclevel">5.1.Test Suite : Home_Menu_Buttons</h2>
+<div><p>Check out that buttons and links in the home page are working</p>
+</div><a name="toc_tc415"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-17: TC-HP-HMB-HOME_HERO&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>The home 
+page is a sort of hub to the different areas ot the platform, a welcome 
+page and a tool to obtain more information. It's a scrolling down page 
+so we will go from top, which means right under the "top-menu" untill 
+the web footer.</p>
+
+<p>The first part is a HERO section. The <strong>Hero</strong>&nbsp;section is designed to create an eye-catching area, &nbsp;that can contain a <strong>Logo</strong>, <strong>Title</strong>, <strong>Button</strong> and <strong>Block</strong>
+ Section. It's&nbsp;basically a ready-made group of sections that work 
+together with a background 'Hero' image that will look great on any 
+device. It has a full screen fixed background that does not move when 
+the displaY.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>The HERO-TOP has:</p>
+
+<ol>
+	<li>an image</li>
+	<li>a text</li>
+	<li>a BUTTON with custom text</li>
+</ol>
+</td><td><p>The text and the image are visible.</p>
+
+<p>The BUTTON has a hover effect.</p>
+
+<p>When clik the BUTTON links to a different page.</p>
+</td></tr><tr><td width="5">2</td><td><p>The HERO-BOTTOM has:</p>
+
+<p>A welcome message.</p>
+
+<p>A register button</p>
+
+<p>A background image optional</p>
+
+<p>&nbsp;</p>
+</td><td><p>The text is visible.</p>
+
+<p>The REGISTER BUTTON as a hover effect.</p>
+
+<p>A click in the REGISTER BUTTON opens up the sign up page</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_5_1_1"></a>
+<h3 class="doclevel">5.1.1.Test Suite : Cards</h3>
+<div><p>After the HERO we have different areas with CARDS.</p>
+
+<p>CARDS are sort of BUTTONS made out of a picture and a tittle link 
+both linked to the same page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+</div><a name="toc_tc420"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-18: TC-HP-HMB-CARDS-HOME_PROCESSES&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>The home 
+page is a sort of hub to the different areas ot the platform, a welcome 
+page and a tool to obtain more information. It's a scrolling dowm page 
+so we will go from top, which means right under the "top-menu" untill 
+the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of 
+BUTTONS made out of a picture (optional) and a tittle link both linked 
+to the same page and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br><p>There must be at least a process already active</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>ACTIVE PROCESSES AREA</p>
+
+<p>If it has an image.</p>
+
+<p>Click on an Active Processes image card.</p>
+</td><td><p>it displays this process' page</p>
+</td></tr><tr><td width="5">2</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>Click on a Active Process tittle card</p>
+</td><td><p>it displays this process' page</p>
+</td></tr><tr><td width="5">4</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>Hover over the "see all processes"&nbsp; BUTTON and click on it.</p>
+</td><td><p>The BUTTON changes color and on click opens the processes section.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc427"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-19: TC-HP-HMB-CARDS-HOME_ASSEMBLIES&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>The home 
+page is a sort of hub to the different areas ot the platform, a welcome 
+page and a tool to obtain more information. It's a scrolling dowm page 
+so we will go from top, which means right under the "top-menu" untill 
+the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of 
+BUTTONS made out of a picture and a tittle link both linked to the same 
+page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>ACTIVE ASSEMBLIES AREA</p>
+
+<p>If it has an image.</p>
+
+<p>Click on an Active assemblies' image card.</p>
+</td><td><p>it displays this assemblies' page</p>
+</td></tr><tr><td width="5">2</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>Click on a Active Assemblies tittle card</p>
+</td><td><p>it displays this assemblies' page</p>
+</td></tr><tr><td width="5">4</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>Hover over the "see all assemblies"&nbsp; BUTTON and click on it.</p>
+</td><td><p>The BUTTON changes color and on click opens the assemblies section.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc434"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-20: TC-HP-HMB-CARDS-HOME_INITIATIVES&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>The home 
+page is a sort of hub to the different areas ot the platform, a welcome 
+page and a tool to obtain more information. It's a scrolling dowm page 
+so we will go from top, which means right under the "top-menu" untill 
+the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of 
+BUTTONS made out of a picture and a tittle link both linked to the same 
+page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>ACTIVE INITIATIVES AREA</p>
+
+<p>if it has an image.</p>
+
+<p>Click on an Active Initiatives image card.</p>
+</td><td><p>it displays this initiatives' page</p>
+</td></tr><tr><td width="5">2</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>Click on a Active Initiatives tittle card</p>
+</td><td><p>it displays this Initiatives' page</p>
+</td></tr><tr><td width="5">4</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>Hover over the "see all initiatives"&nbsp; BUTTON and click on it.</p>
+</td><td><p>The BUTTON changes color and on click opens the initiatives section.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc441"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-31: TC-HP-HMB-CARDS-HOME_OTHER_CARDS&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>The home 
+page is a sort of hub to the different areas ot the platform, a welcome 
+page and a tool to obtain more information. It's a scrolling dowm page 
+so we will go from top, which means right under the "top-menu" untill 
+the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of 
+BUTTONS made out of a picture and a tittle link both linked to the same 
+page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies,
+ initiatives, etc) By default usually there is a process area but there 
+must be diferent ones. In all the cases the structure is the same.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>OTHER CARDS AREA</p>
+
+<p>if it has an image.</p>
+
+<p>Click on an Active image card.</p>
+</td><td><p>it displays the page linked to the card</p>
+</td></tr><tr><td width="5">2</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>Click on a Active tittle card</p>
+</td><td><p>it displays the page linked to the card</p>
+</td></tr><tr><td width="5">4</td><td><p>Return to the home page</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>Hover over the "see all "whatever Card it may be"&nbsp; BUTTON and click on it.</p>
+</td><td><p>The BUTTON changes color and on click displays the page linked to the card</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br></td></tr>
+</tbody></table>
+</div>
+<a name="toc_tc448"></a><p>&nbsp;</p><div> <table class="tc" width="90%"><tbody><tr><th colspan="4">Test Case DEC-22: TC-HP-HMB-LOWER_PART&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">xavier</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br><p>After the CARDS area an before the FOOTER there are some links and informations.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Area: How do I take part in a process? // ¿Cómo tomo parte en un proceso? // Com participo en un procés?</p>
+
+<p>Assert that there is information for each icon.</p>
+</td><td><p>Information like this should appear:</p>
+
+<p>Meetings. Find out where and when you can participate in public meetings.</p>
+
+<p>Debates. Debate and discuss, share your views and enrich the relevant topics.</p>
+
+<p>Proposals. Make proposals, support existing ones and promote the changes you want to see.</p>
+</td></tr><tr><td width="5">2</td><td><p>Hover the "More Information" BUTTON and click on it</p>
+</td><td><p>The BUTTON should change color and on click a FAQ or More information page is displayed.</p>
+</td></tr><tr><td width="5">3</td><td><p>"Current state of" displays 
+figures about the site. For instance: Participants, Processes, 
+Assemblies, Proposals, Accepted Proposals, Votes, Results, Meetings, 
+Endorsements, Completed Surveys, etc</p>
+</td><td><p>The figures appear.</p>
+</td></tr><tr><td width="5">4</td><td><p>Welcome Message and register BUTTON.</p>
+
+<p>Hover the register BUTTON anc click on it</p>
+</td><td><p>The BUTTON changes color. On click displays sign-up page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span></td><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">admin<br>user<br>visitor<br>functional<br>english<br>catalan<br>castella<br></td></tr>
+</tbody></table>
+</div>
+
+
+</body></html>
