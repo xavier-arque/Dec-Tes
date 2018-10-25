@@ -1,0 +1,4750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="2092" name="common settings" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<ol>
+	<li>Acces the site.</li>
+	<li>Click on the menus</li>
+	<li>Use the languages menu</li>
+	<li>Use the Sign Up menu</li>
+	<li>Use the Sign in menu</li>
+	<li>&quot;SEE ALL PROCESSES&quot; button</li>
+	<li>Acces a processes</li>
+	<li>&quot;SEE ALL ASSEMBLIES&quot; button</li>
+	<li>Acces an assembly</li>
+	<li>&quot;PARTICIPATE&quot; button</li>
+	<li>&quot;MORE INFO&quot; button</li>
+	<li>Return to home page via HOME button</li>
+	<li>Return to home page via LOGO button</li>
+	<li>Register button1</li>
+	<li>Register Button2</li>
+	<li>Bottom menus</li>
+	<li>Social network buttons</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></details> 
+<testsuite id="2093" name="Top Menu" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[<p>Check that the top menu allows you to go from one page to the others and back to the home</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords><testsuite id="2094" name="Language Menu" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Functionality of the language menu.</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2402" name="TC-CS-TM-LANGUAGE_MENU-SPAN">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[111]]></externalid>
+	<fullexternalid><![CDATA[DT-111]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilingual.</p>
+
+<p>There must be a pop-down menu in the upper part right of the site to switch between languages. By default there are three languages: catalan, castillano, english although in the demo site sometimes there are only two.</p>
+
+<p>This TC has to check out that:</p>
+
+<p>- A visitor can switch between the different languages.</p>
+
+<p>- Once you select a language it stays actives even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Your decidim site has to be on-line.</p>
+
+<p>You can use the site http://staging.decidim.codegram.com/ as a demo online</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the decidim site</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the castellano option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in castellano:</p>
+
+<ol>
+	<li>inicio</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have castellano text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in castellano:</p>
+
+<ol>
+	<li>Procesos</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have castellano text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in castellano:</p>
+
+<ol>
+	<li>Asambleas</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have castellano text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in castellano:</p>
+
+<ol>
+	<li>Entrar</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have castellano text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in castellano:</p>
+
+<ol>
+	<li>Reg&iacute;strate</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have castellano text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in castellano:</p>
+
+<ol>
+	<li>M&aacute;s informaci&oacute;n</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have castellano text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that is in castellano</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in english and the text must be castellano</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="language"><notes><![CDATA[
+
+]]></notes></keyword>
+<keyword name="general feature"><notes><![CDATA[
+
+]]></notes></keyword>
+<keyword name="idioma"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-USE]]></doc_id>
+			<title><![CDATA[User   profile   and   personal   settings]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-PRO]]></doc_id>
+			<title><![CDATA[My public profile]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2389" name="TC-CS-TM-LANGUAGE_MENU-CAT">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[110]]></externalid>
+	<fullexternalid><![CDATA[DT-110]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilingual.</p>
+
+<p>There must be a pop-down menu in the upper part right of the site to switch between languages. By default there are three languages: catalan, castillano, english although in the demo site sometimes there are only two.</p>
+
+<p>This TC has to check out that:</p>
+
+<p>- A visitor can switch between the different languages.</p>
+
+<p>- Once you select a language it stays actives even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Your decidim site has to be on-line.</p>
+
+<p>You can use the site http://staging.decidim.codegram.com/ as a demo online</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the decidim site</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the catalan option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in catalan:</p>
+
+<ol>
+	<li>inici</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in catalan:</p>
+
+<ol>
+	<li>Processoss</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in catalan:</p>
+
+<ol>
+	<li>Assamblees</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in catalan:</p>
+
+<ol>
+	<li>Entra</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in catalan:</p>
+
+<ol>
+	<li>Registrat</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in catalan:</p>
+
+<ol>
+	<li>M&eacute;s informaci&oacute;</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that is in catalan</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in english and the text must be catalan</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="language"><notes><![CDATA[
+
+]]></notes></keyword>
+<keyword name="general feature"><notes><![CDATA[
+
+]]></notes></keyword>
+<keyword name="idioma"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-USE]]></doc_id>
+			<title><![CDATA[User   profile   and   personal   settings]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-PRO]]></doc_id>
+			<title><![CDATA[My public profile]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2095" name="TC-CS-TM-LANGUAGE_MENU-CAT-OLD">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<fullexternalid><![CDATA[DT-1]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilingual.</p>
+
+<p>There must be a pop-down menu in the upper part right of the site to switch between languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english although in the demo site sometimes there are only two.</p>
+
+<p>This TC has to check out that the menu works correctly switching between the different languages and once you select a language it stays actives even if you navigate to another page.</p>
+
+<p>This TC has to validate that even when you sign-in or register, the language option remains de same as long as you don&#39;t change it and that you still can change it</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Your decidim site has to be on-line.</p>
+
+<p>You can use the site http://staging.decidim.codegram.com/ as a demo online</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>3</status>
+	<is_open>1</is_open>
+	<active>0</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the site decidim</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the catalan option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>assert that the top menu is in catalan</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>inici</li>
+	<li>processos</li>
+	<li>assemblees</li>
+	<li>m&eacute;s informaci&oacute;</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>assert that at least the following pages are in catalan:</p>
+
+<ol>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">inici</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">processos</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">assemblees</a></li>
+	<li><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=149&amp;tcversion_id=150&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D149%26show_mode%3Dshow&amp;step_id=154">m&eacute;s informaci&oacute;</a></li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each Page must hav catalan text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>assert that at least the following pages are in catalan and login or register:</p>
+
+			<ol>
+				<li>registrat</li>
+				<li>entra</li>
+			</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each page shall be in catalan</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that it&#39;s in catalan</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in catalan and the text must be catalan</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-USE]]></doc_id>
+			<title><![CDATA[User   profile   and   personal   settings]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-PRO]]></doc_id>
+			<title><![CDATA[My public profile]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2347" name="TC-CS-TM-LANGUAGE_MENU-ENG">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[107]]></externalid>
+	<fullexternalid><![CDATA[DT-107]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilingual.</p>
+
+<p>There must be a pop-down menu in the upper part right of the site to switch between languages. By default there are three languages: catalan, castillano, english although in the demo site sometimes there are only two.</p>
+
+<p>This TC has to check out that:</p>
+
+<p>- A visitor can switch between the different languages.</p>
+
+<p>- Once you select a language it stays actives even if you navigate to another page.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Your decidim site has to be on-line.</p>
+
+<p>You can use the site http://staging.decidim.codegram.com/ as a demo online</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the decidim site</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the english option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in english:</p>
+
+<ol>
+	<li>home</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in english:</p>
+
+<ol>
+	<li>Process</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in english:</p>
+
+<ol>
+	<li>Assemblies</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in english:</p>
+
+<ol>
+	<li>Sign in/login</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in english:</p>
+
+<ol>
+	<li>Sign-up/Register</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that is in english</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in english and the text must be english</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[17]]></step_number>
+	<actions><![CDATA[<p>Assert that the following page is in english:</p>
+
+<ol>
+	<li>More information</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Page must have english text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="language"><notes><![CDATA[
+
+]]></notes></keyword>
+<keyword name="general feature"><notes><![CDATA[
+
+]]></notes></keyword>
+<keyword name="idioma"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-USE]]></doc_id>
+			<title><![CDATA[User   profile   and   personal   settings]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-PRO]]></doc_id>
+			<title><![CDATA[My public profile]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2356" name="TC-CS-TM-LANGUAGE_MENU-SPA-OLD">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[108]]></externalid>
+	<fullexternalid><![CDATA[DT-108]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Decidim sites are multilingual.</p>
+
+<p>There must be a pop-down menu in the upper part right of the site to switch between languages.</p>
+
+<p>By default there are three languages: catalan, castillano, english although in the demo site sometimes there are only two.</p>
+
+<p>This TC has to check out that the menu works correctly switching between the different languages and once you select a language it stays actives even if you navigate to another page.</p>
+
+<p>This TC has to validate that even when you sign-in or register, the language option remains de same as long as you don&#39;t change it and that you still can change it</p>
+]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Your decidim site has to be on-line.</p>
+
+<p>You can use the site http://staging.decidim.codegram.com/ as a demo online</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>3</status>
+	<is_open>1</is_open>
+	<active>0</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>access the site decidim</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the site is online and fully loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>hover to the language pop-down menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the pop-dowm menu appears and display the other languages</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>clic on the catalan option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language selected must be visible in the top part of the site when the pop-down menu dissapears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>assert that the top menu is in spanish</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the top menu must have at least the following options:</p>
+
+<ol>
+	<li>inicio</li>
+	<li>procesos</li>
+	<li>asambleas</li>
+	<li>m&aacute;s informaci&oacute;n</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>assert that at least the following pages are in spanish:</p>
+
+<ol>
+	<li>inicio</li>
+	<li>procesos</li>
+	<li>asambleas</li>
+	<li>m&aacute;s informaci&oacute;n</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each Page must have spanish text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>assert that at least the following pages are in spanish and sign in or register:</p>
+
+			<ol>
+				<li>registrate</li>
+				<li>entra</li>
+			</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each page shall be in spanish</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Return to home page and assert that is in spanish</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the language menu must be in catalan and the text must be spanish</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-USE]]></doc_id>
+			<title><![CDATA[User   profile   and   personal   settings]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-PRO]]></doc_id>
+			<title><![CDATA[My public profile]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="2119" name="Sign Up Page" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Use of the Sign up menu and page.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username &quot;<strong>user@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;) or you can login and explore as and <strong>Admin</strong> (username &quot;<strong>admin@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;).</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2120" name="TC-CS-TM-SIGN_UP-REGISTER">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<fullexternalid><![CDATA[DT-9]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whether user can successfully access the the sign up page and sign up.</p>
+
+<p>The user can access the register page from different pages therefore correct acces from this places must be validated. At least it must be validated the acces from the sing in page and the home page.</p>
+
+<p>It will be much better to create a new and different Test Case just to check out access from different parts of the platform.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>the site must be on-line</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand and the red bar should change color slightly</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the sign-UP page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fiel up the following fields:</p>
+
+<ol>
+	<li>your name</li>
+	<li>your short</li>
+	<li>your e-mail</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The following fields should show:</p>
+
+<ol>
+	<li>the entered name</li>
+	<li>the entered short</li>
+	<li>a valid e-mail address</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill up the password fields with valid information:</p>
+
+<ol>
+	<li>enter the text in the new password field</li>
+	<li>repeat it in the new password field</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The followings fields show:</p>
+
+<ol>
+	<li>a masked password</li>
+	<li>a masked password</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>click the SIGN UP BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>go to the home page</p>
+
+<p>this message sshould appears:</p>
+
+<p>A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Confirmation e-mail</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>user should receive a confirmation e-mail in the address provided in step 3</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>The e-mail shoud have the subject: confirmation instructions and the following text:</p>
+
+<p>&quot;Welcome (e-mail address provided) !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p>Confirm my account</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Confirm my account&quot; link should drive the user to the login page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2129" name="TC-CS-TM-SIGN_UP-LOG_IN">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<fullexternalid><![CDATA[DT-11]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the log-in page through the log in link in the Sign-Up page or in the bottom of the homepage.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username &quot;<strong>user@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;) or you can login and explore as and <strong>Admin</strong> (username &quot;<strong>admin@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;).</p>
+]]></summary>
+	<preconditions><![CDATA[<p>the site must be on-line and apart from the demo site, the user must have been registered before</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>From the sign up page</p>
+
+<p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-in page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>from the homepage</p>
+
+<p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-in page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2133" name="TC-CS-TM-SIGN_UP-OTHER">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<fullexternalid><![CDATA[DT-14]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Check out that the other features of the SIGN-UP page work.</p>
+
+<ol>
+	<li>Upper &quot;Log in&quot; LINK</li>
+	<li>Receive an occasional newsletter with relevant information CHECK MARK</li>
+	<li>By signing up you agree to <a href="http://staging.decidim.codegram.com/pages/terms-and-conditions">the terms and conditions of use</a>. CHECK MARK</li>
+	<li><a href="http://staging.decidim.codegram.com/pages/terms-and-conditions">&quot;the terms and conditions of use&quot;</a> LINK</li>
+	<li>Lower &quot;Log in&quot; LINK</li>
+	<li><a href="http://staging.decidim.codegram.com/users/password/new">Forgot your password? LINK</a></li>
+	<li>Didn&#39;t receive confirmation instructions? LINK</li>
+</ol>
+
+<p>All these features have a low priority and importance because all of them can be solved from other places or have no significant impact in the user experirience.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2135" name="TC-CS-TM-SIGN_UP-REGISTER_NEGATIVE">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<fullexternalid><![CDATA[DT-15]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the sign up page and can not sign up unless the correct information is provided</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the sign up page</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand and the red bar should change color slightly</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: SIGN UP</p>
+
+<p>catala:REGISTRAR-SE</p>
+
+<p>spanish: REGISTRARSE</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the sign-UP page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fiel up the following fields:</p>
+
+<ol>
+	<li>your name</li>
+	<li>your short</li>
+	<li>your e-mail</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The following fields should show:</p>
+
+<ol>
+	<li>the entered name</li>
+	<li>the entered short</li>
+	<li>a valid e-mail address</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill up the password fields with valid information:</p>
+
+<ol>
+	<li>enter the text in the new password field</li>
+	<li>repeat it in the new password field</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The followings fields show:</p>
+
+<ol>
+	<li>a masked password</li>
+	<li>a masked password</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>click the SIGN UP BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>go to the home page</p>
+
+<p>this message sshould appears:</p>
+
+<p>A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="2142" name="Sign In Page" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Use of the SIGN IN&nbsp; button and the login page.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username &quot;<strong>user@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;) or you can login and explore as and <strong>Admin</strong> (username &quot;<strong>admin@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;).</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2143" name="TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-invalid user valid password">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<fullexternalid><![CDATA[DT-5]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify the behavior of webpage when user enteres an invalid username with valid password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the login page</p>
+
+<p>There should be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user should be already created active user accounts.</p>
+
+<p>The user information and the admin information have been provided through https://decidim.org/demo/ on 28-III-2018</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter a invalid username</p>
+
+<p>user:<strong>error@example.org</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Enter a valid password:</p>
+
+<p>user:<strong>decidim123456</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>warning message shall be displayed to the user</p>
+
+<p>message cat: Invalid Correu electr&ograve;nic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electr&oacute;nico o contrase&ntilde;a inv&aacute;lida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2148" name="TC-CS-TM-SIN_IN_PAGE-SIGN_IN_POSITIVE">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<fullexternalid><![CDATA[DT-6]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This Test Case will verify whether a user can successfully log into the sign in page with a valid username and a valid password.</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username &quot;<strong>user@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;) or you can login and explore as and <strong>Admin</strong> (username &quot;<strong>admin@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;).</p>
+
+<p>The log in page is refered as sign in page</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the login page</p>
+
+<p>There should be a user name and a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user shave an active user or admin account</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter a valid username</p>
+
+<p>user:<strong>user@example.org</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name shall be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter a valid password:</p>
+
+<p><strong>decidim123456</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User shall be able to type in the password field</p>
+
+<p>Entered password shall be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be redirected to the homepage</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2153" name="TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-invalid user invalid password">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<fullexternalid><![CDATA[DT-7]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify the behavior of webpage when user enteres an invalid username with an invalid password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User shall be in the login page</p>
+
+<p>There shall be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user must have a user or admin account</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter a valid username</p>
+
+<p>user:<strong>error@example.org</strong></p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name shall be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter an invalid password:</p>
+
+<p>user:decidim</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User shall be able to type in password field</p>
+
+<p>Entered password shall be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electr&ograve;nic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electr&oacute;nico o contrase&ntilde;a inv&aacute;lida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2158" name="TC-CS-TM-SIN_IN_PAGE-SIGN_IN_NEGATIVE-valid user invalid password">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<fullexternalid><![CDATA[DT-8]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify the behavior of webpage when user enteres an valid username with an invalid password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User shall be in the login page</p>
+
+<p>There shall be a password provided after signing up in the register page or provided by managment for testing pourposses.</p>
+
+<p>The user shall be already created and active.</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Enter an valid username</p>
+
+<p>user:<strong>user@example.org</strong></p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>user shall be able to type in username text field</li>
+	<li>entered user name should be displayed to the user</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter an invalid password:</p>
+
+<p>user:decidim</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User shall be able to type in password field</p>
+
+<p>Entered password should be masked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on the login button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>warning message should be displayed to the user</p>
+
+<p>message cat: Invalid Correu electr&ograve;nic or password.</p>
+
+<p>message ing: Invalid Email or password.</p>
+
+<p>message spanish: Correo electr&oacute;nico o contrase&ntilde;a inv&aacute;lida.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG-NEG]]></doc_id>
+			<title><![CDATA[Negative Registration and Verification]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2167" name="TC-CS-TM-SIN_IN_PAGE-SIGN_UP">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<fullexternalid><![CDATA[DT-12]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>This test case will verify whethere user can succesfully access the the sign in page through the LOG-IN BUTTON in th sign up page</p>
+
+<p>You can either log in as a <strong>regular user</strong> (with username &quot;<strong>user@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;) or you can login and explore as and <strong>Admin</strong> (username &quot;<strong>admin@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;).</p>
+]]></summary>
+	<preconditions><![CDATA[<p>User should be in the sign up page</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>hover over the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the icon should change to a hand</p>
+
+<ol>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on the:</p>
+
+<p>english: LOG-IN</p>
+
+<p>catala:INICIAR SESSI&Oacute;</p>
+
+<p>spanish: INICIAR SESI&Oacute;N</p>
+
+<p>BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the page should change to the log-in page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Once in the sign-in page you should run the log-in/sign in TC or fill the fields to validate a positive and a negative log in</p>
+
+<p>to log in as a <strong>regular user</strong> (with username &quot;<strong>user@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;)</p>
+
+<p>to login as <strong>Admin</strong> (username &quot;<strong>admin@example.org</strong>&quot; and password &quot;<strong>decidim123456</strong>&quot;).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>you shall login with correct credentials or do not be able to log in with bad credentials</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2171" name="TC-CS-TM-SIN_IN_PAGE-OTHER">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<fullexternalid><![CDATA[DT-13]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Check out that the other features of the log-in page work.</p>
+
+<ol>
+	<li>Create an account LINK</li>
+	<li>Remeber CHECK MARK</li>
+	<li>Sign up LINK</li>
+	<li>Forgot your password LINK</li>
+	<li>Didn&#39;t receive confirmation instructions? LINK</li>
+</ol>
+
+<p>All these features have a low priority and importance because all of them can be solved from other places or have no significant impact in the user experirience.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite>
+<testcase internalid="2173" name="TC-CS-TM-NAVIGATION_BAR">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<fullexternalid><![CDATA[DT-16]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>From the home page each visitor has to be able to go at least to the following sections ussing the &quot;top menu&quot;:</p>
+
+<p>CAT: INICI-PROCESSOS-ASSEMBLEES-INICIATIVES-MULTICONSULTES-M&Eacute;S INFORMACI&Oacute;</p>
+
+<p>SPA: INICIO-PROCESOS-ASAMBLEAS-INICIATIVAS-MULTICONSULTAS-M&Aacute;S INFORMACI&Oacute;N</p>
+
+<p>ENG: HOME-PROCESSES-ASSEMBLIES-INITIATIVES-CONSULTATIONS-MORE INFORMATION</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Be in the home page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover the HOME BUTTON</li>
+	<li>Hover the PROCESSES BUTTON</li>
+	<li>Hover the ASSEMBLIES BUTTON</li>
+	<li>Hover the INITIATIVES BUTTON</li>
+	<li>Hover the CONSULTATIONS BUTTON</li>
+	<li>Hover the MORE INFORMATION BUTTON</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The text get highlighted when mouse hovers over the different menus</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click the HOME BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the Home page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click the PROCESSES BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A red strip appears over the button</p>
+
+<p>Stay at or acces&nbsp;the PROCESSES page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>click the ASSEMBLIES BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the ASSEMBLIES page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>click the INITIATIVES BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the INITIATIVES page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>click the CONSULTATIONS BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the CONSULTATIONS page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>click the MORE INFORMATION BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A red strip appears over the button&nbsp;</p>
+
+<p>Stay at or acces the MORE INFORMATION page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2182" name="TC-CS-TM-TITLE_BAR">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<fullexternalid><![CDATA[DT-35]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Over the navigation bar and under the omnipresent banner, there is a bar with some icons drop down menus and links. It allows you to see the logo to select the language and depending on your status (visitor-user/admin e.i either you have logged in or not) you may have acces to your notifications, your conversations and your account in case you already logged in as user/admin or you visualize the links to the log in page or the sign-up page.</p>
+
+<p>This strip from the web stays always visible unless you are inside the dashboard page.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on your organization logo &lt;logo-wrapper&gt; in the left part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and on click you should be redirected to the referenced page. Most likely the home page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the search field in the center part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the text icon and on click you the cursor shall blink in the text field ready for you to enter the search text</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Enter the text to search</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text must appear on the text field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Once you enter the text. Click on the lens icon or just press the enter keyboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>&nbsp;</p>
+			</td>
+			<td>
+			<p><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=2182&amp;tcversion_id=2183&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D2182%26show_mode%3Dshow&amp;step_id=2368">You shall be redirected to the rsearch results page</a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click on the &#39;selected language&#39; text in the right part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and a drop down menu with the other languages available shall apear. On click on any other language the language of the page will change to the selected language</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>This icon will not be visible if you already log-in</p>
+
+<p>Click on &quot;Sign Up&quot; text in the right part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and on click you should be redirected to the Sign Up page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>This icon will not be visible if you already log-in</p>
+
+<p>Click on &quot;Sign In&quot; text in the right part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and on click you should be redirected to the Sign In page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>This icon will appear after you log-in</p>
+
+<p>Click on the notifications icon, (bell shaped) in the right part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and on click you should be redirected to the notifications page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>This icon will appear after you log-in</p>
+
+<p>Click on the conversations icon, (mail shaped) in the right part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and on click you should be redirected to the conversations page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>This icon will appear after you log-in</p>
+
+<p>Click on the account icon (your account name) in the right part of the area</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse icon should change to the hand icon and a drop down menu with the account sub-menus shall appear.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-NOT]]></doc_id>
+			<title><![CDATA[Notifications Icon]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SIU]]></doc_id>
+			<title><![CDATA[Sign up]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-SII]]></doc_id>
+			<title><![CDATA[Sign in]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-CON]]></doc_id>
+			<title><![CDATA[Conversations]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-LANG]]></doc_id>
+			<title><![CDATA[Multi-language]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="2185" name="TC-CS-TM-OMNIPRESENT_AND_COOKIES">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<fullexternalid><![CDATA[DT-36]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>On top the navigation bar there are the omnipresent bar which may hold a news or warning message with a link and the acceptance message for the cookies.</p>
+
+<p>A screenshot has to bee uploaded&nbsp; to clearly identify those bars :If the image has been uploaded you&#39;ll find the image on the lower part of this window</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>On top the navigation bar there is the omnipresent bar which may hold a news or warning message with a link.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Click on the link and the linked page has to open</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>On top the navigation bar there is the acceptance message for the cookies with an &quot;I agree&quot; accept BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Click on the accept BUTTON and the message must vanish</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="smoke"><notes><![CDATA[
+test cases applicable to smoke test
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+<keyword name="usability"><notes><![CDATA[
+test cases applicable to usability
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-COO]]></doc_id>
+			<title><![CDATA[Cookies]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="2189" name="Profile Menu" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Once a user is logged the sign-in menu turns into the Profile Menu. A drop-dowm menu that allows the user to acces different options related with his/her profile and actions.</p>
+
+<p>If you are an admin, from this menu you can access the Dashboard section. Due to the fact that somoe options like the Dashboard or the account are quite big their will have their own suit of tests</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2190" name="TC-CS-PM-PROFILE_MENU">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<fullexternalid><![CDATA[DT-23]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The drop-down menu has the folowing options (if you are not an admin, you don&#39;t have acces to the Admin dashboard option)</p>
+
+<ol>
+	<li>My account</li>
+	<li>My public profile</li>
+	<li>Notifications</li>
+	<li>Conversations</li>
+	<li>Admin dashboard</li>
+	<li>Sign out</li>
+</ol>
+]]></summary>
+	<preconditions><![CDATA[<p>Logged as admin. After clicking in the admin option you have to go back to the home menu because the profile menu dissapears</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the My account option</li>
+	<li>Click on My account option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The account page opens up</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the My public profile option</li>
+	<li>Click on My public profile option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The My public profile page opens up</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Notifications option</li>
+	<li>Click on Notifications option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The Notifications page opens up</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Conversations option</li>
+	<li>Click on&nbsp;Conversations option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The Conversations page opens up</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Admin dashboard option</li>
+	<li>Click on&nbsp;Admin dashboard option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The Admin dashboard page opens up</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the Sign out option</li>
+	<li>Click on&nbsp;Sign out option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The log in page appears and you are logged out</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-REG]]></doc_id>
+			<title><![CDATA[Registration,  verification and Navigate]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Participants]]></req_spec_title>
+			<doc_id><![CDATA[PARTIC-1-USE]]></doc_id>
+			<title><![CDATA[User   profile   and   personal   settings]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-ACO]]></doc_id>
+			<title><![CDATA[Account]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[General   features]]></req_spec_title>
+			<doc_id><![CDATA[GENER-1-PRO]]></doc_id>
+			<title><![CDATA[My public profile]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Homepage]]></req_spec_title>
+			<doc_id><![CDATA[PART-SPACES-1-HOM]]></doc_id>
+			<title><![CDATA[Homepage]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+<testsuite id="2198" name="Account" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>The my account option has the following submenus:</p>
+
+<ol>
+	<li>Account</li>
+	<li>Notifications Settings</li>
+	<li>Authorizations</li>
+	<li>Organizations (only if the user sign up a s organization)</li>
+	<li>Delete my account</li>
+</ol>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2199" name="TC-CS-PM-MY_ACCOUNT-ACCOUNT">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<fullexternalid><![CDATA[DT-24]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Validate the different options from the Account page.</p>
+
+<p>It will be necessary to break it in different Test Cases for the different options, but so far the TC is for al the options</p>
+]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;Account&gt;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>Hover to the user name.</li>
+	<li>Hover to the My account option</li>
+	<li>Click on My account option</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>The user name change color and the drop down-menu appears</li>
+	<li>The text changes its color</li>
+	<li>The account page opens up</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Avatar BUTTON Navegate.</p>
+
+<p>Click</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Allows you to navegate to a folder with pictures and select one</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Select an image</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The selected image is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>The following fields should have already the text provided in the registration process:</p>
+
+<p>Your Name</p>
+
+<p>Your short</p>
+
+<p>Your e-mail</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The fields have already the text provided in the registration process:</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>there is a sign/warning for the requiered fields</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;an * on hover displays a requiered warning.</p>
+
+<p>The fields with the * have a warning if they are left empty</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>Change the text in the following fields</p>
+
+			<p>Your Name</p>
+
+			<p>Your short</p>
+
+			<p>Your e-mail</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text has to appear correctly in the text fields.</p>
+
+<p>The names have to be unique and the e-mail field accepts only e-mail addresses</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Add a personal URL</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the URL has to appear correctly</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>About. Text field to add more information</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text has to appear clearly in the text field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>click on change password BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A submenu is displayed with two fields:</p>
+
+<ol>
+	<li>New Password</li>
+	<li>Confirm your password</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>writte a new password in the text field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the text has to appear masked in the text field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>writte again the password in the &quot;Confirm your new password&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the text has to appear masked in the text field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>click the Update Account BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page should update the changes made in it and a message is displayed:</p>
+
+<p>Your account was updated successfully.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2213" name="TC-CS-PM-MY_ACCOUNT-NOTIFICATION_SETTINGS">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<fullexternalid><![CDATA[DT-25]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>A page with two SWITCH paddle</p>
+]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;Notifications settings&gt;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on switch &quot;I want to receive an email every time I receive a notification&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The switch will switch from red to gray or vice-versa</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on SWITCH &quot;I want to receive newsletters&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The SWITCH will switch from red to gray or vice-versa</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>click on SAVE CHANGES BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On hover the mouse changes to hand icon and on click a message apears:</p>
+
+<p>Your notifications settings were updated successfully.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2218" name="TC-CS-PM-MY_ACCOUNT-DELETE_MY_ACCOUNT">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<fullexternalid><![CDATA[DT-26]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Validate the delete account option</p>
+]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;delete my account&gt;</p>
+
+<p>the account will be deleted so create a new user jo to test this option</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>The message: &quot;This action cannot be undone. If you delete your account you won&#39;t be able to log in.&quot;&nbsp; has to be visible.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The message is visible.</p>
+
+<p>&nbsp;
+<p>&nbsp;</p>
+</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>click on Delete my Account BUTTON.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The warning message appears</p>
+
+<p>there is a &quot;Yes, I want to delete my account&quot; BUTTON.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>A warning &quot;Are you sure you want to delete your account?&quot; appears with a &quot;Yes, I want to delete my account&quot; BUTTON.</p>
+
+<p>click on the: &quot;Yes, I want to delete my account&quot; BUTTON.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The message is visible.</p>
+
+<p>The Home page is displayed</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Go to the sign in page and try to sign in with the user that has been deleted</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>You are not able to log-in.</p>
+
+<p>The message: Invalid Email or password. is visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2224" name="TC-CS-PM-MY_ACCOUNT-ORGANIZATIONS">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<fullexternalid><![CDATA[DT-27]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;Organizations&gt;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>The organization/s name is displayed</p>
+
+<p>There is a TAG displaying the status &quot;Verified&quot; or not.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text is visible and there is a status TAG</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="2227" name="Authorizations" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>THIS INFORMATION HAS TO GO TO THE REQUIEREMENTS SECTION.</p>
+
+<p>Decidim offers several methods for allowing participants to get authorization to perform certain privileged actions. This module implements several of those methods and also offers a way for installation to implement their custom verification methods.</p>
+
+<p>Each decidim instance is in full control of its authorizations, and can customize:</p>
+
+<ul>
+	<li>
+	<p>The different methods to be used by users to get verified. For example, through a census, by uploading their identity documents, or by receiving a verification home at their address.</p>
+	</li>
+	<li>
+	<p>The different actions in decidim that require authorization, and which authorization method they require. For example, a decidim instance might choose to require census authorization to create proposals, but a fully verified address via a verification code sent by postal mail for voting on proposals.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Decidim implements two type of authorization methods:</p>
+
+<ul>
+	<li>
+	<p><em>Form authorizations</em>.</p>
+
+	<p>When your verification method is simple enough, you can use a Rectify::Form to implement it. &quot;Simple&quot; here means that the authorization can be granted with the submission of a single form. For example, to validate a user against a census API you will need a form with some fields that your users will use to authenticate against a census (for example, an ID and a Postal Code)</p>
+	</li>
+	<li>
+	<p><em>Workflow authorizations</em>.</p>
+
+	<p>For more complex scenarios requiring several steps or admin intervention, you can register a verification flow.</p>
+	</li>
+</ul>
+
+<h2>Custom action authorizers</h2>
+
+<p>Custom action authorizers are an advanced component that can be used in both types of authorization methods to customize some parts of the authorization process. These are particulary useful when used within verification options, which are set in the admin zone related to a component action. As a result, a verification method will be allowed to change the authorization logic and the appearance based on the context where the authorization is being performed.</p>
+
+<p>For example, you can require authorization for supporting proposals in a participatory process, and also restrict it to users with postal codes 12345 and 12346.</p>
+
+<p>&nbsp;</p>
+
+<p>Detailed information:</p>
+
+<p><a href="https://github.com/decidim/decidim/tree/master/decidim-verifications">https://github.com/decidim/decidim/tree/master/decidim-verifications</a></p>
+
+<p>Authorization:</p>
+
+<p><a href="https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/authorizations_spec.rb">https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/authorizations_spec.rb</a></p>
+
+<p>Action Authorization:</p>
+
+<p><a href="https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/action_authorization_spec.rb">https://github.com/decidim/decidim/blob/master/decidim-verifications/spec/system/action_authorization_spec.rb</a></p>
+
+<p>Postal letter code authorization:</p>
+
+<p><a href="https://github.com/decidim/decidim/tree/master/decidim-verifications/spec/system/postal_letter">https://github.com/decidim/decidim/tree/master/decidim-verifications/spec/system/postal_letter</a></p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2228" name="TC-CS-PM-AUTHORIZATIONS-IDENTITY_DOC">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<fullexternalid><![CDATA[DT-28]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>A page to validate identity.</p>
+
+<p>There are three links:</p>
+
+<ol>
+	<li>Identity documents</li>
+	<li>Code by postal letter</li>
+	<li>Example authorization</li>
+</ol>
+]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;Authorizations&gt;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Identity documents&quot; BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opens a page to upload your identity document</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Select the type of document from the Drop Down menu by clicking in the &quot;Please select&quot; text.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A drop dowm menu with the options DNI, NIE, Passport (or similars) appears</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Select a type of document</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Please Select&quot; text changes to the type of document selected</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Enter a valid ID number with the correct format.</p>
+
+<p>(ATTENTION THE FORMAT SO FAR HAS NOT BEEN DEFINED)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The numbers should appear in the text field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Uload a scanned copy of your document.</p>
+
+<p>Click on the NAVEGATION BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A file browser appears and you cn upload an image</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>CLick on the Request Verification BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Your send back to the Authorizations page. The lock icon before the &quot;Identiy documents&quot; change to a sort of recicle circular arrow.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>click on the &quot;Identity documents&quot; BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A message apears: &quot;We&#39;re reviewing your documents. You&#39;ll be verified shortly&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2237" name="TC-CS-PM-AUTHORIZATIONS-CODE_POSTAL_LETTER">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<fullexternalid><![CDATA[DT-29]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>A page to validate identity.</p>
+
+<p>There are three links:</p>
+
+<ol>
+	<li>Identity documents</li>
+	<li>Code by postal letter</li>
+	<li>Example authorization</li>
+</ol>
+]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;Authorizations&gt;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Code by postal letter&quot; BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opens a page to enter your address</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter your full address in the text field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The address must be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>CLick on the Send me a letter BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The User settings page is displayed with the message: &quot;Thanks! We&#39;ll send a verification code to your address&quot;</p>
+
+<p>The lock icon before the &quot;Identiy documents&quot; change to a sort of recicle circular arrow.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Code by postal letter&quot; BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A message apears: &quot;We&#39;ll be sending a letter to your address with your verification code soon&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2243" name="TC-CS-PM-AUTHORIZATIONS-EXAMPLE_AUTHORIZATION">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<fullexternalid><![CDATA[DT-30]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>A page to validate identity.</p>
+
+<p>There are three links:</p>
+
+<ol>
+	<li>Identity documents</li>
+	<li>Code by postal letter</li>
+	<li>Example authorization</li>
+</ol>
+]]></summary>
+	<preconditions><![CDATA[<p>select the submenu &lt;Authorizations&gt;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Example authorization&quot; BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>opens a page with some text field and a verification button</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter your full text in the text and data field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text must be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>CLick on the Send BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The User settings page is displayed with the message: &quot;You&#39;ve been successfully authorized.&quot;</p>
+
+<p>The lock icon before the &quot;example authorization&quot; changes to open lock and displays somthing similar to: &quot;Granted at March 30, 2018 18:24 Expires at March 30, 2018 19:24&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Code by postal letter&quot; BUTTON</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A message apears: &quot;We&#39;ll be sending a letter to your address with your verification code soon&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite></testsuite><testsuite id="2249" name="Footer Menu" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Different BUTTONS and LINKS in the footer section</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2250" name="TC-FM-FOOTER_MENU">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<fullexternalid><![CDATA[DT-32]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Web footer.</p>
+
+<p>Check out the different links, the social network icons and the logo and creative commons icons.</p>
+
+<p>Attention, the number of links in the &lt;footer-nav&gt;may be more then the three that exist by default and not all the social networks have to be available.</p>
+
+<p>The links in the &lt;footer-nav&gt; are also the links in the information page</p>
+
+<p>On top of the footer menus there is a text that says:</p>
+
+<p>&quot;Welcome to Beier-Lindgren participatory platform. Let&#39;s build a more open, transparent and collaborative society.Join, participate and decide.&quot;</p>
+
+<p>And after this text there is REGISTER BUTTON.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Return to footer&#39;s home page after you assert that a link works.</p>
+
+<p>There are four links in the footer nav menu.</p>
+
+<p>All the social network icons are on display</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p><a href="http://localhost:8080/testlink/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=360&amp;tcversion_id=361&amp;goback_url=http%3A%2F%2Flocalhost%3A8080%2Ftestlink%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D360%26show_mode%3Dundefined&amp;step_id=362">Hover the mouse over the (register) BUTTON and click on it</a></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Sign Up page is displayed.</p>
+
+<p>Most likely: http://staging.decidim.codegram.com/users/sign_up</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>On top of the footer menus there must appear a text that says:</p>
+
+<p>&quot;Welcome to Beier-Lindgren participatory platform. Let&#39;s build a more open, transparent and collaborative society.Join, participate and decide.&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>On top of the footer menus there is indeed a text that says:</p>
+
+<p>&quot;Welcome to Beier-Lindgren participatory platform. Let&#39;s build a more open, transparent and collaborative society.Join, participate and decide.&quot;</p>
+
+<p>And after this text there is REGISTER BUTTON.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for terms-and-conditions LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the terms-and-conditions page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for initiatives) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the initiatives page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the social network icons and click on each LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The icons get highlighted and on click the user page of each social network is displayed in a new window</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the creative commons icons and click on it.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The creative commons license page is displayed in a new window</p>
+
+<p>Most likely:</p>
+
+<p>https://creativecommons.org/licenses/by-sa/4.0/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the &quot;free software&quot; link and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The text gets highlighted and on click the dedidim page on github is displayed in a new window</p>
+
+<p>Most likely: https://github.com/decidim/decidim</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the Decidim logo and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for accessibility) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the accessibility page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for faq) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the faq page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite></testsuite><testsuite id="2262" name="Processes Page" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>Functionality of the Processes page</p>
+]]></details> 
+
+<testcase internalid="2263" name="TC-PP-PROCESSES_PAGE">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<fullexternalid><![CDATA[DT-34]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Processes page.</p>
+
+<p>Assert that the common elements are on display: top menu, menu bar, footer. This is tagged in the TC as an automated assert but it can be done manually as well and it will be easier.</p>
+
+<p>Check out the different links.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Return to the processes page after you assert that a link works.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Assert that the title &quot;Highlighted processes&quot; is present</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the &quot;Highlighted processes&quot; title is present</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted processes&quot; section, hover the mouse over the white frame surrounding the assemblie title and click on it if the coursor changes to a hand..</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>on click the page for this particular processes is displayed in a new window</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted processes&quot; area, hover the mouse over the MORE INFO BUTTON inside the area of an assemblie and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The mouse changes to a hand, the BUTTON change its color and, on click, the processes page of this particular processes is loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted processes&quot; area, hover the mouse over the TAKE PART BUTTON inside the image of an processes and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The mouse changes to a hand, the BUTTON changes colors and on click, the processes page of this particular processes is loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted processes&quot; section, hover the mouse over the (title for a processes) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;On click the page for this particular processes is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Assert that the Processes title with the number of displayed processes is visible</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;X processes&quot; title is visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>In the &quot;X processes&quot; section, hover the mouse over the (title for an processes) and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;On click the page for this particular processes is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>In the &quot;X processes&quot; area, hover the mouse over the TAKE PART BUTTON inside the image of a processes and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The mouse changes to a hand, the BUTTON changes colors and on click, the processes page of this particular processes is loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the processes BUTTON in the menu bar and click on it just to validate that the menu bar is available</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The Processes page is reloaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Validate that the omnipresent bar that includes the omnipresent banner tittle is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The omnipresent bar is in the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>Validate that the top bar that includes the language menu, some icons and the account menu is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The top bar is in the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the Decidim logo and click on it just to validate that the lower part of the footer is available</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[13]]></step_number>
+	<actions><![CDATA[<p>Assert tha the PAST, ACTIVE, UPCOMING AND ALL BUTTONS are working fine</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each BUTTON has to filter the different processes on display acordingly its function (past process, active process, upcoming process and all)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="2278" name="Assemblies Page" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Functionalities of the Assemblies window</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2279" name="TC-AP-ASSEMBLIES_PAGE">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<fullexternalid><![CDATA[DT-33]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Assemblies page.</p>
+
+<p>Assert that the common elements are on display: top menu, menu bar, footer. This is tagged in the TC as an automated assert but it can be done manually as well and it will be easier.</p>
+
+<p>Check out the different links.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Return to the assemblies page after you assert that a link works.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Assert that the title &quot;Highlighted assemblies&quot; is present</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>the &quot;Highlighted assemblies&quot; title is present</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted assemblies&quot; section, hover the mouse over the white frame surrounding the assemblie title and click on it if the coursor changes to a hand..</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>on click the page for this particular assembly is displayed in a new window</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted assemblies&quot; area, hover the mouse over the MORE INFO BUTTON inside the area of an assemblie and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The mouse changes to a hand, the BUTTON change its color and, on click, the assembliy page of this particular assembly is loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted assemblies&quot; area, hover the mouse over the TAKE PART BUTTON inside the image of an assemblie and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The mouse changes to a hand, the BUTTON changes colors and on click, the assembliy page of this particular assembly is loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Highlighted assemblies&quot; section, hover the mouse over the (title for an assemblie) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;On click the page for this particular assembly is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Assert that Assemblies title with the number of displayed assemblies is visible</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;X Assemblies&quot; title is visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>In the &quot;X Assemblies&quot; section, hover the mouse over the (title for an assemblie) and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;On click the page for this particular assembly is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>In the &quot;X Assemblies&quot; area, hover the mouse over the TAKE PART BUTTON inside the image of an assemblie and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The mouse changes to a hand, the BUTTON changes colors and on click, the assembliy page of this particular assembly is loaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the Assemblies BUTTON in the menu bar and click on it just to validate that the menu bar is available</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The Assemblies page is reloaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Validate that the omnipresent bar that includes the omnipresent banner tittle is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The omnipresent bar is in the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>Validate that the top bar that includes the language menu, some icons and the account menu is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The top bar is in the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the Decidim logo and click on it just to validate that the lower part of the footer is available</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="2293" name="More Information Page" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>Functionalities of the More Information page</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2294" name="TC-MIP-MORE_INFORMATION_PAGE">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<fullexternalid><![CDATA[DT-21]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>More information page.</p>
+
+<p>Assert that the common elements are on display: top menu, menu bar, footer. This is tagged as an automated assert but it can be done manually as well and it will be easier.</p>
+
+<p>Check out the different links.</p>
+
+<p>Attention, the number of links may be more than the three that exist by default</p>
+
+<p>The links in the &lt;footer-nav&gt; are also the links in the information page</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Return to the more information page after you assert that a link works.</p>
+
+<p>There are four links for this Test Case but you have to adapt it to the number of links in your page</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for faq) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the faq page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for accessibility) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the accessibility page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for terms-and-conditions LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the terms-and-conditions page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the (title for initiatives) LINK and click on the LINK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The link gets highlighted and on click the initiatives page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the social network icons and click on one LINK just to validate that the uper part of the footer is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The icon gets highlighted and on click the user page of the social network is displayed in a new window</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the More information BUTTON in the menu bar and click on it just to validate that the menu bar is available</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The More Information page is reloaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Hover the mouse over the Decidim logo and click on it just to validate that the lower part of the footer is available</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;The dedidim page is displayed in a new window</p>
+
+<p>Most likely: https://decidim.org/</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Validate that the omnipresnt bar that includes the omnipresent banner tittle is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The omnipresent bar is in the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Validate that the top bar that includes the language menu, some icons and the account menu is in the page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The top bar is in the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="2305" name="Home Page" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[<p>Functionality of the Home page</p>
+]]></details> 
+<testsuite id="2306" name="Home_Menu_Buttons" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[<p>Check out that buttons and links in the home page are working</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2307" name="TC-HP-HMB-HOME_HERO">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<fullexternalid><![CDATA[DT-17]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The home page is a sort of hub to the different areas ot the platform, a welcome page and a tool to obtain more information. It&#39;s a scrolling down page so we will go from top, which means right under the &quot;top-menu&quot; untill the web footer.</p>
+
+<p>The first part is a HERO section. The <strong>Hero</strong>&nbsp;section is designed to create an eye-catching area, &nbsp;that can contain a <strong>Logo</strong>, <strong>Title</strong>, <strong>Button</strong> and <strong>Block</strong> Section. It&#39;s&nbsp;basically a ready-made group of sections that work together with a background &#39;Hero&#39; image that will look great on any device. It has a full screen fixed background that does not move when the displaY.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>The HERO-TOP has:</p>
+
+<ol>
+	<li>an image</li>
+	<li>a text</li>
+	<li>a BUTTON with custom text</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text and the image are visible.</p>
+
+<p>The BUTTON has a hover effect.</p>
+
+<p>When clik the BUTTON links to a different page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>The HERO-BOTTOM has:</p>
+
+<p>A welcome message.</p>
+
+<p>A register button</p>
+
+<p>A background image optional</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The text is visible.</p>
+
+<p>The REGISTER BUTTON as a hover effect.</p>
+
+<p>A click in the REGISTER BUTTON opens up the sign up page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testcase>
+<testsuite id="2311" name="Cards" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>After the HERO we have different areas with CARDS.</p>
+
+<p>CARDS are sort of BUTTONS made out of a picture and a tittle link both linked to the same page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+]]></details> 
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords>
+<testcase internalid="2312" name="TC-HP-HMB-CARDS-HOME_PROCESSES">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<fullexternalid><![CDATA[DT-18]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The home page is a sort of hub to the different areas ot the platform, a welcome page and a tool to obtain more information. It&#39;s a scrolling dowm page so we will go from top, which means right under the &quot;top-menu&quot; untill the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of BUTTONS made out of a picture (optional) and a tittle link both linked to the same page and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>There must be at least a process already active</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>ACTIVE PROCESSES AREA</p>
+
+<p>If it has an image.</p>
+
+<p>Click on an Active Processes image card.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays this process&#39; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on a Active Process tittle card</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays this process&#39; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Hover over the &quot;see all processes&quot;&nbsp; BUTTON and click on it.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The BUTTON changes color and on click opens the processes section.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2319" name="TC-HP-HMB-CARDS-HOME_ASSEMBLIES">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<fullexternalid><![CDATA[DT-19]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The home page is a sort of hub to the different areas ot the platform, a welcome page and a tool to obtain more information. It&#39;s a scrolling dowm page so we will go from top, which means right under the &quot;top-menu&quot; untill the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of BUTTONS made out of a picture and a tittle link both linked to the same page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>ACTIVE ASSEMBLIES AREA</p>
+
+<p>If it has an image.</p>
+
+<p>Click on an Active assemblies&#39; image card.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays this assemblies&#39; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on a Active Assemblies tittle card</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays this assemblies&#39; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Hover over the &quot;see all assemblies&quot;&nbsp; BUTTON and click on it.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The BUTTON changes color and on click opens the assemblies section.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2326" name="TC-HP-HMB-CARDS-HOME_INITIATIVES">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<fullexternalid><![CDATA[DT-20]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The home page is a sort of hub to the different areas ot the platform, a welcome page and a tool to obtain more information. It&#39;s a scrolling dowm page so we will go from top, which means right under the &quot;top-menu&quot; untill the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of BUTTONS made out of a picture and a tittle link both linked to the same page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc)</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>ACTIVE INITIATIVES AREA</p>
+
+<p>if it has an image.</p>
+
+<p>Click on an Active Initiatives image card.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays this initiatives&#39; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on a Active Initiatives tittle card</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays this Initiatives&#39; page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Hover over the &quot;see all initiatives&quot;&nbsp; BUTTON and click on it.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The BUTTON changes color and on click opens the initiatives section.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="2333" name="TC-HP-HMB-CARDS-HOME_OTHER_CARDS">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<fullexternalid><![CDATA[DT-31]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The home page is a sort of hub to the different areas ot the platform, a welcome page and a tool to obtain more information. It&#39;s a scrolling dowm page so we will go from top, which means right under the &quot;top-menu&quot; untill the web footer.</p>
+
+<p>After the HERO we have different areas with CARDS. CARDS are sort of BUTTONS made out of a picture and a tittle link both linked to the same page and&nbsp;and an optional explanatory text.</p>
+
+<p>CARDS are gouped acording to which area belong (processes, asemblies, initiatives, etc) By default usually there is a process area but there must be diferent ones. In all the cases the structure is the same.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>OTHER CARDS AREA</p>
+
+<p>if it has an image.</p>
+
+<p>Click on an Active image card.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays the page linked to the card</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on a Active tittle card</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>it displays the page linked to the card</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Return to the home page</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Hover over the &quot;see all &quot;whatever Card it may be&quot;&nbsp; BUTTON and click on it.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The BUTTON changes color and on click displays the page linked to the card</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
+<testcase internalid="2340" name="TC-HP-HMB-LOWER_PART">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<fullexternalid><![CDATA[DT-22]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>After the CARDS area an before the FOOTER there are some links and informations.</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>2</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Area: How do I take part in a process? // &iquest;C&oacute;mo tomo parte en un proceso? // Com participo en un proc&eacute;s?</p>
+
+<p>Assert that there is information for each icon.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Information like this should appear:</p>
+
+<p>Meetings. Find out where and when you can participate in public meetings.</p>
+
+<p>Debates. Debate and discuss, share your views and enrich the relevant topics.</p>
+
+<p>Proposals. Make proposals, support existing ones and promote the changes you want to see.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Hover the &quot;More Information&quot; BUTTON and click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The BUTTON should change color and on click a FAQ or More information page is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>&quot;Current state of&quot; displays figures about the site. For instance: Participants, Processes, Assemblies, Proposals, Accepted Proposals, Votes, Results, Meetings, Endorsements, Completed Surveys, etc</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The figures appear.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Welcome Message and register BUTTON.</p>
+
+<p>Hover the register BUTTON anc click on it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The BUTTON changes color. On click displays sign-up page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="admin"><notes><![CDATA[
+for admin profile
+]]></notes></keyword>
+<keyword name="user"><notes><![CDATA[
+for a user profile
+]]></notes></keyword>
+<keyword name="visitor"><notes><![CDATA[
+for a visitor profile
+]]></notes></keyword>
+<keyword name="functional"><notes><![CDATA[
+test cases applicable to functional test
+]]></notes></keyword>
+<keyword name="english"><notes><![CDATA[
+english version
+]]></notes></keyword>
+<keyword name="catalan"><notes><![CDATA[
+catalan version
+]]></notes></keyword>
+<keyword name="castella"><notes><![CDATA[
+spanish version
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite></testsuite></testsuite>
